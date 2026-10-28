@@ -126,4 +126,4 @@ dist/
 # OTROS
 # ==========================================
 
-tests/test.py
+scripts/test.py
