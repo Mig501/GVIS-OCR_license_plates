@@ -127,4 +127,5 @@ dist/
 # ==========================================
 
 scripts/prueba_cluster.py
+scripts/prueba_gpu.py
 comandos.txt
