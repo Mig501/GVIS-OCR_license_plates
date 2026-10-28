@@ -126,4 +126,4 @@ dist/
 # OTROS
 # ==========================================
 
-scripts/test.py
+scripts/prueba_cluster.py
