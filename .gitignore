@@ -1,0 +1,129 @@
+
+# ==========================================
+# OCR MATRICULAS - GVIS
+# ==========================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+envs/
+conda-env/
+
+# Conda
+.conda/
+conda-meta/
+
+# Variables y credenciales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==========================================
+# DATASETS
+# ==========================================
+
+# Ignorar datos, pero conservar documentación
+/data/*
+!/data/README.md
+
+# Archivos de datasets
+*.h5
+*.hdf5
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# ==========================================
+# MODELOS Y CHECKPOINTS
+# ==========================================
+
+/weights/
+/checkpoints/
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# ==========================================
+# RESULTADOS
+# ==========================================
+
+/results/*
+!/results/README.md
+
+# Logs
+*.log
+slurm-*.out
+slurm-*.err
+
+# ==========================================
+# APPTAINER
+# ==========================================
+
+*.sif
+*.simg
+*.img
+*.sandbox/
+
+# ==========================================
+# JUPYTER
+# ==========================================
+
+.ipynb_checkpoints/
+
+# ==========================================
+# EDITORES E IDE
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# TESTING Y CACHE
+# ==========================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.cache/
+.uv-cache/
+
+# ==========================================
+# SISTEMA OPERATIVO
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# BUILD
+# ==========================================
+
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# OTROS
+# ==========================================
+
+tests/test.py
