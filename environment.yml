@@ -1,0 +1,11 @@
+
+name: ocr_matriculas
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.14
+  - numpy
+  - pip
+  - pytest
