@@ -56,7 +56,19 @@ echo "Script: $SCRIPT"
 echo "Fecha: $(date)"
 echo "======================================"
 
-# 7. Ejecutar Python mediante Apptainer
+# 7.Montar los datasets del cluster dentro de Apptainer
+DATA_ROOT="$HOME/datasets/ocr_matriculas"
+
+if [ ! -d "$DATA_ROOT" ]; then
+    echo "ERROR: No existe el directorio $DATA_ROOT"
+    exit 1
+fi
+
+export APPTAINER_BINDPATH="${APPTAINER_BINDPATH:+${APPTAINER_BINDPATH},}${DATA_ROOT}:${DATA_ROOT}:rw"
+
+echo "Datasets montados desde: $DATA_ROOT"
+
+# 8. Ejecutar Python mediante Apptainer
 python "$SCRIPT"
 
 echo "======================================"
