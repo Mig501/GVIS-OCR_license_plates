@@ -1,0 +1,4 @@
+image_path,crop_status,label_review_status,verified_text,notes
+images/test__PH20CNP.png,valid_crop,verified,PH20CNP,"Recorte manual aprobado visualmente; bbox=(676,392,785,424); imagen original 1280x720."
+images/train__SB90TZI.png,valid_crop,verified,SB90TZI,"Recorte manual aprobado visualmente; bbox=(494,463,675,519); imagen nocturna."
+images/train__TR05RBG.png,valid_crop,verified,TR05RBG,"Recorte manual aprobado visualmente; bbox=(710,439,944,515); imagen nocturna."
