@@ -10,7 +10,7 @@
 - **[V] Página pública contrastada en línea:** apertura de la página pública correspondiente; verificar la página no implica haber descargado pesos, entrenado modelos ni validado licencias de imágenes de terceros.
 - **[I] Interpretación, hipótesis o propuesta experimental:** razonamiento para el proyecto, aún pendiente de contrastar mediante pruebas comunes.
 - **ND:** dato no disponible o no confirmado en las fuentes consultadas.
-- **Referencias:** `[A1]`–`[A29]` identifican las fuentes del informe de arquitecturas; `[D1]`–`[D14]`, las del informe de datasets. La numeración interna de los informes originales se conserva dentro de cada prefijo.
+- **Referencias:** `[A1]`–`[A30]` identifican las fuentes del informe de arquitecturas; `[D1]`–`[D14]`, las del informe de datasets. La numeración interna de los informes originales se conserva dentro de cada prefijo.
 
 ## 1. Resumen del problema y objetivos
 
@@ -38,13 +38,13 @@
 | A03 | DTrOCR | Transformer exclusivamente decodificador, autorregresivo | OCR; faltan pesos originales localizados |
 | A04 | FF-LPD | Detector temporal de matrículas en vídeo | **Fuera del alcance inicial:** no transcribe texto |
 | A05 | Fusión OCR + VLM + reglas + LLM | Sistema híbrido y posprocesamiento por formato | Interesa el posprocesamiento; difícil comparación aislada |
-| A06 | MDiff4STR-S/B | Codificador SVTRv2 + decodificación discreta por difusión | **Candidato experimental**; código y pesos publicados |
+| A06 | MDiff4STR-S/B [A10] | Codificador SVTRv2 + decodificación discreta por difusión | **Candidato experimental**; código y pesos publicados |
 | A07 | OTE-A/OTE-N | Representación visual global + decodificación secuencial o paralela | OCR; pesos oficiales no confirmados en fichas |
 | A08 | HMAKD | Destilación de múltiples profesores hacia estudiante | OCR; requiere reproducir la destilación |
-| A09 | SVTRv2-T/S/B | CNN/Transformer visual + CTC | **Candidato experimental principal**; código y pesos publicados |
+| A09 | SVTRv2-T/S/B [A19] | CNN/Transformer visual + CTC | **Candidato experimental principal**; código y pesos publicados |
 | A010 | Tiny ALPR | Sistema embebido; reconocimiento CNN LPRNet | Candidato condicional: aislar el reconocedor del sistema |
 | A011 | TextSSR | Generación de imágenes de texto mediante difusión | **Complementario:** datos sintéticos, no OCR |
-| A012 | Estudio de escalado / REBU-Syn | Experimentos con TrOCR, PARSeq y CLIP4STR; mezcla real/sintética | **Complementario:** estudio de escalado y datos; no arquitectura única |
+| A012 | Estudio de escalado / REBU-Syn [A27]; incluye PARSeq [A30] | Experimentos con TrOCR, PARSeq y CLIP4STR; mezcla real/sintética | **Complementario:** estudio de escalado y datos; no arquitectura única |
 
 Las alternativas A04, A011 y A012 se conservaron en la revisión, pero **no se deben clasificar como tres reconocedores OCR nuevos**. En A012 sí se comparan modelos OCR existentes y sus versiones; esas configuraciones aparecen en la tabla detallada para preservar la evidencia del documento original.
 
@@ -61,20 +61,20 @@ Las alternativas A04, A011 y A012 se conservaron en la revisión, pero **no se d
 | A03 · DTrOCR (inglés) | 99,6 % de exactitud por palabra en IIIT5K (ajustado con datos reales); generaliza a texto irregular; España: ND. | 128 M parámetros en configuración inglesa; GPU A100 para entrenar; velocidad de esta variante: ND. | Original sin código/pesos públicos localizados; implementación externa [A6] sin checkpoints. Ajuste OCR desde cero o parcial difícil. |
 | A03 · DTrOCR (chino) | Reconocimiento de caracteres chinos; precisión específica en la ficha: ND. España: ND. | 105 M parámetros; 97,9 img/s sobre RTX 2080 Ti en benchmark chino; memoria: ND. | Código/pesos originales: ND. Se requiere adaptación del vocabulario y preentrenamiento visual. |
 | A05 · OCR + VLM + reglas + LLM | UC3M-LP: 45,2 % → 88,3 % al añadir etapas; evaluación europea de 50 recortes escogidos, resultados con inconsistencias. España: ND. | CPU Core i7/16 GB: 6,8 s/imagen (UC3M-LP) y 7,5 s/recorte (EU Plates); no tiempo real. | Código global y pesos OCR/VLM: ND; Qwen2.5-0.5B disponible [A9]. Adaptación sobre todo por plantillas y reglas. |
-| A06 · MDiff4STR-S | Exactitud específica Small: ND en ficha; benchmarks de texto irregular y ocluido; España: ND. | 18,9 M parámetros; latencia Small y VRAM: ND; entrenamiento con 4 × RTX 3090. | Código y pesos oficiales [A11], [A12]; fine-tuning viable y comparación de 1–3 pasos de refinamiento. |
-| A06 · MDiff4STR-B (BLC) | 97,30 % media en 6 benchmarks; 88,44 % en Union14M y ≈84,3 % en OST. Sin prueba española. | 31,9 M parámetros; ablación con 3 pasos: 19,21 ms (variante/dispositivo de esa medición: ND). | Código y pesos oficiales [A11], [A12]; fine-tuning posible con recortes y transcripciones españoles. |
+| A06 · MDiff4STR-S [A10] | Exactitud específica Small: ND en ficha; benchmarks de texto irregular y ocluido; España: ND. | 18,9 M parámetros; latencia Small y VRAM: ND; entrenamiento con 4 × RTX 3090. | Código y pesos oficiales [A11], [A12]; fine-tuning viable y comparación de 1–3 pasos de refinamiento. |
+| A06 · MDiff4STR-B (BLC) [A10] | 97,30 % media en 6 benchmarks; 88,44 % en Union14M y ≈84,3 % en OST. Sin prueba española. | 31,9 M parámetros; ablación con 3 pasos: 19,21 ms (variante/dispositivo de esa medición: ND). | Código y pesos oficiales [A11], [A12]; fine-tuning posible con recortes y transcripciones españoles. |
 | A07 · OTE-A / SVTR | 96,1 % media en 6 benchmarks con Union14M-L; estudia texto sin contexto lingüístico. España: ND. | 25,2 M parámetros para configuración SVTR; latencia/FPS: ND; entrenamiento con 2 × RTX 4090. | Repo oficial anuncia publicación, sin código/pesos confirmados [A14]. Reimplementación OpenOCR [A11], checkpoint: ND. |
 | A07 · OTE-N / SVTR | Exactitud propia N/SVTR: ND en ficha; decodificación paralela potencialmente menos precisa. España: ND. | Parámetros exactos de N: ND; codificador SVTR de referencia: 25,2 M. Latencia: ND. | Reimplementación OpenOCR [A11]; pesos compatibles: ND. Comparar OTE-N y OTE-A con mismos datos. |
 | A08 · HMAKD (estudiante) | 96,7 % media en 6 benchmarks; caída de transferencia entre idiomas/dominios; España: ND. | Parámetros/latencia del estudiante: ND. Entrenamiento usa 4 × A100, 256 GB RAM; 12 h en ablación de ponderación. | Código/pesos HMAKD: ND. Profesores PARSeq, ABINet, ViTSTR y TRBA públicos [A4], [A16]–[A18]; destilación a implementar. |
-| A09 · SVTRv2-T | Exactitud individual Tiny: ND. Estudio informa 96,57 % (6 benchmarks) y 86,14 % (Union14M) sin asignación por variante en la ficha. España: ND. | 5,1 M parámetros; 201 FPS en GTX 1080 Ti; VRAM mínima: ND. | Código y pesos oficiales OpenOCR [A11], [A20]; fine-tuning en español viable. |
-| A09 · SVTRv2-S | Exactitud individual Small: ND; ver resultados generales del estudio en fila Tiny. España: ND. | 11,3 M parámetros; 189 FPS en GTX 1080 Ti; VRAM: ND. | Código y pesos oficiales OpenOCR [A11], [A20]; fine-tuning viable. |
-| A09 · SVTRv2-B | Exactitud individual Base: ND; ver resultados generales del estudio en fila Tiny. España: ND. | 19,8 M parámetros; 143 FPS en GTX 1080 Ti; VRAM: ND. | Código y pesos oficiales OpenOCR [A11], [A20]; fine-tuning viable. |
+| A09 · SVTRv2-T [A19] | Exactitud individual Tiny: ND. Estudio informa 96,57 % (6 benchmarks) y 86,14 % (Union14M) sin asignación por variante en la ficha. España: ND. | 5,1 M parámetros; 201 FPS en GTX 1080 Ti; VRAM mínima: ND. | Código y pesos oficiales OpenOCR [A11], [A20]; fine-tuning en español viable. |
+| A09 · SVTRv2-S [A19] | Exactitud individual Small: ND; ver resultados generales del estudio en fila Tiny. España: ND. | 11,3 M parámetros; 189 FPS en GTX 1080 Ti; VRAM: ND. | Código y pesos oficiales OpenOCR [A11], [A20]; fine-tuning viable. |
+| A09 · SVTRv2-B [A19] | Exactitud individual Base: ND; ver resultados generales del estudio en fila Tiny. España: ND. | 19,8 M parámetros; 143 FPS en GTX 1080 Ti; VRAM: ND. | Código y pesos oficiales OpenOCR [A11], [A20]; fine-tuning viable. |
 | A010 · Tiny ALPR (sin cuantizar) | 98,7 % de exactitud media en CCPD (sistema completo, no OCR aislado); España: ND. | ≈1,28 M parámetros del sistema; latencia/consumo específicos sin cuantizar: ND. | Repo oficial con inferencia y modelos ONNX [A22]; fine-tuning completo no documentado. |
 | A010 · Tiny ALPR (INT8, RV1106) | Exactitud independiente de INT8: ND; estudio comunica 99,23 % global en prueba real del sistema, con casos sin matrícula. | 22 FPS; 44,8 ms; 629 mW; modelos 4,22 MB en RV1106 (ARM + NPU). | Código de inferencia y ONNX [A22]; adaptar reconocedor de 66 clases y 8 caracteres; entrenamiento no reproducible directamente. |
 | A012 · TrOCR-S (estudio escalado) | Exactitud propia en ficha: ND; estudio de texto general, sin prueba española. | 43,09 M parámetros; latencia inferencia: ND; GPU V100 32 GB en experimentos. | Código/pesos base TrOCR [A2]; variante exacta del estudio: ND. Fine-tuning sobre matrículas viable. |
 | A012 · TrOCR-Huge (estudio escalado) | Exactitud propia en ficha: ND; no hay evaluación española. | 1.037,61 M parámetros; latencia, VRAM mínima y tamaño de pesos: ND. | Repositorio general TrOCR [A2]; pesos exactos del estudio: ND. Adaptación potencialmente costosa. |
-| A012 · PARSeq-S (estudio escalado) | En experimento con datos mixtos y posterior ajuste real: 96,85 % → 97,01 % (según ficha); España: ND. | ≈22 M parámetros; mejor resultado a 32 épocas en su experimento; latencia: ND. | Implementación y pesos PARSeq [A4]; fine-tuning factible con matrículas españolas. |
-| A012 · PARSeq-L (estudio escalado) | Exactitud específica: ND; texto general, no matrículas españolas. | Hasta ≈600 M parámetros para variantes grandes estudiadas; PARSeq-L converge en 5 épocas en experimento; latencia: ND. | Código de arquitectura PARSeq [A4]; pesos exactos de gran escala: ND; fine-tuning exigente. |
+| A012 · PARSeq-S (estudio escalado) [A30] | En experimento con datos mixtos y posterior ajuste real: 96,85 % → 97,01 % (según ficha); España: ND. | ≈22 M parámetros; mejor resultado a 32 épocas en su experimento; latencia: ND. | Implementación y pesos PARSeq [A4]; fine-tuning factible con matrículas españolas. |
+| A012 · PARSeq-L (estudio escalado) [A30] | Exactitud específica: ND; texto general, no matrículas españolas. | Hasta ≈600 M parámetros para variantes grandes estudiadas; PARSeq-L converge en 5 épocas en experimento; latencia: ND. | Código de arquitectura PARSeq [A4]; pesos exactos de gran escala: ND; fine-tuning exigente. |
 | A012 · CLIP4STR-L* (REBU-Syn) | 97,42 % media en 6 benchmarks de texto general; España: ND. | Coste de inferencia, parámetros y VRAM de esta versión: ND en ficha. | Repositorio de inferencia [A28]; pesos L* específicos: ND en guía revisada; adaptación requiere confirmar checkpoint. |
 | A012 · CLIP4STR-B* (REBU-Syn) | Exactitud específica B*: ND en ficha; no prueba española. | Parámetros, memoria y velocidad de esta versión: ND. | Guía oficial enlaza pesos B* [A29]; inferencia disponible [A28]. Adaptación/fine-tuning: procedimiento ND. |
 
@@ -147,7 +147,7 @@ Las alternativas A04, A011 y A012 se conservaron en la revisión, pero **no se d
 
 ## 4. Referencias científicas, repositorios y enlaces
 
-Las referencias siguientes se han **transcrito y consolidado de los documentos originales**, manteniendo sus metadatos; no se han reconstruido autores o números de página ausentes. Se presentan DOI y enlaces públicos para facilitar su comprobación.
+Las referencias [A1]–[A29] y [D1]–[D14] se han **transcrito y consolidado de los documentos originales**, manteniendo sus metadatos; no se han reconstruido autores o números de página ausentes. La referencia [A30], correspondiente al *paper* original de PARSeq, se ha añadido tras verificar su publicación editorial. Se presentan DOI y enlaces públicos para facilitar su comprobación.
 
 ### 4.1. Fuentes de arquitecturas OCR (A)
 
@@ -180,6 +180,7 @@ Las referencias siguientes se han **transcrito y consolidado de los documentos o
 - [A27] M. Rang, Z. Bi, C. Liu, Y. Wang y K. Han, “An Empirical Study of Scaling Law for Scene Text Recognition,” en Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 15619–15629, 2024. [En línea]. Disponible: https://openaccess.thecvf.com/content/CVPR2024/html/Rang_An_Empirical_Study_of_Scaling_Law_for_Scene_Text_Recognition_CVPR_2024_paper.html
 - [A28] Large OCR Model, “An Empirical Study of Scaling Law for Scene Text Recognition,” GitHub, 2024. [En línea]. Disponible: https://github.com/large-ocr-model/large-ocr-model.github.io. [Consultado: 14-oct-2026].
 - [A29] Large OCR Model, “Inference Guide — CLIP4STR-B*,” GitHub. [En línea]. Disponible: https://github.com/large-ocr-model/large-ocr-model.github.io/blob/main/Inference.md. [Consultado: 14-oct-2026].
+- [A30] D. Bautista y R. Atienza, “Scene Text Recognition with Permuted Autoregressive Sequence Models,” en *Computer Vision – ECCV 2022*, Lecture Notes in Computer Science, vol. 13688, pp. 178–196, Springer, 2022. DOI: https://doi.org/10.1007/978-3-031-19815-1_11. Paper: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/556_ECCV_2022_paper.php.
 
 ### 4.2. Fuentes de datasets (D)
 
@@ -238,11 +239,13 @@ Las referencias siguientes se han **transcrito y consolidado de los documentos o
 
 ### 6.1. ¿Con qué 2–3 arquitecturas comenzar y por qué?
 
-| Prioridad | Arquitectura y versiones | Evidencia bibliográfica [P] | Razón y límite de la propuesta [I] |
-|---|---|---|---|
-| **1. Principal** | **SVTRv2-Tiny y Small** (A09); Base en ablación. | 5,1 / 11,3 / 19,8 M parámetros y 201 / 189 / 143 FPS publicados en GTX 1080 Ti; código/pesos en OpenOCR [A19], [A20]. | Empezar por un OCR CTC rápido y reproducible. Comparar Tiny frente a Small para ver si la capacidad adicional mejora HR-A/HR-B. Los FPS publicados **no son** medidas de nuestro equipo ni su precisión sobre matrículas españolas. |
-| **2. Contraste arquitectónico** | **MDiff4STR-Small**, después Base (A06). | 18,9 / 31,9 M parámetros; pesos e implementación [A10]–[A12]; Base-BLC 97,30 % medio en seis benchmarks de texto general. | Comprobar si refinar predicciones (1/2/3 pasos) reduce errores en HR con degradaciones reales a un coste aceptable. No comparar directamente cifras de artículos tomadas sobre hardware distinto. |
-| **3. Control opcional** | **PARSeq** con checkpoint verificable [A4]. | Repositorio oficial y checkpoints; familia Transformer con decodificador distinta de CTC y difusión, utilizada en el estudio [A27]. | Aportar una tercera referencia solo si la instalación e inferencia son reproducibles; no afirmar que el checkpoint disponible reproduce exactamente PARSeq-S de A012. |
+| Prioridad | Arquitectura y versiones | Paper original (referencia científica) | Evidencia bibliográfica [P] | Razón y límite de la propuesta [I] |
+|---|---|---|---|---|
+| **1. Principal** | **SVTRv2-Tiny y Small** (A09); Base en ablación. | **[A19]** Y. Du, Z. Chen, H. Xie, C. Jia y Y.-G. Jiang, “SVTRv2: CTC Beats Encoder-Decoder Models in Scene Text Recognition,” *ICCV*, pp. 20147–20156, 2025. [DOI](https://doi.org/10.1109/ICCV51701.2025.01874). | 5,1 / 11,3 / 19,8 M parámetros y 201 / 189 / 143 FPS publicados en GTX 1080 Ti; código/pesos en OpenOCR [A19], [A20]. | Empezar por un OCR CTC rápido y reproducible. Comparar Tiny frente a Small para ver si la capacidad adicional mejora HR-A/HR-B. Los FPS publicados **no son** medidas de nuestro equipo ni su precisión sobre matrículas españolas. |
+| **2. Contraste arquitectónico** | **MDiff4STR-Small**, después Base (A06). | **[A10]** Y. Du, M. Zhao, S. Fan, Z. Chen, C. Jia y Y.-G. Jiang, “MDiff4STR: Mask Diffusion Model for Scene Text Recognition,” *AAAI*, vol. 40, n.º 5, pp. 3705–3713, 2026. [DOI](https://doi.org/10.1609/aaai.v40i5.37370). | 18,9 / 31,9 M parámetros; pesos e implementación [A10]–[A12]; Base-BLC 97,30 % medio en seis benchmarks de texto general. | Comprobar si refinar predicciones (1/2/3 pasos) reduce errores en HR con degradaciones reales a un coste aceptable. No comparar directamente cifras de artículos tomadas sobre hardware distinto. |
+| **3. Control opcional** | **PARSeq** con checkpoint verificable [A4]. | **[A30]** D. Bautista y R. Atienza, “Scene Text Recognition with Permuted Autoregressive Sequence Models,” *ECCV*, LNCS 13688, pp. 178–196, 2022. [DOI](https://doi.org/10.1007/978-3-031-19815-1_11). | Repositorio oficial y checkpoints [A4]; familia Transformer con decodificador distinta de CTC y difusión, utilizada en el estudio [A27]. | Aportar una tercera referencia solo si la instalación e inferencia son reproducibles; no afirmar que el checkpoint disponible reproduce exactamente PARSeq-S de A012. |
+
+**Nota bibliográfica [P].** Las variantes Tiny/Small/Base de SVTRv2 remiten al mismo paper [A19], igual que Small/Base de MDiff4STR remiten a [A10]. PARSeq tiene un paper científico específico [A30], diferente del repositorio de código [A4] y del estudio de escalado [A27].
 
 **No prioritarias por ahora [I]:** Tiny ALPR requeriría separar LPRNet de su pipeline completo; FF-LPD solo detecta; TextSSR genera datos; A012 es un estudio de modelos y mezclas de datos, **no** un OCR independiente. Se conservan en la revisión por su posible uso posterior.
 
