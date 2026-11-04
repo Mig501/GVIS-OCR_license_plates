@@ -70,8 +70,6 @@ El CSV `scripts/elpd/gt_validation.csv` conserva `candidate_text`, `review_statu
 
 ## 5. Comprobación final de integridad
 
-**Informe:** `results/audit/ELPD/final_eval/integrity_check/integrity_summary.txt`.
-
 | Prueba | Resultado |
 |---|---:|
 | Imágenes referenciadas | 80 |
@@ -81,12 +79,6 @@ El CSV `scripts/elpd/gt_validation.csv` conserva `candidate_text`, `review_statu
 | Matrículas distintas | 73 |
 | Filas del inventario general | 735 |
 | Grupos de imágenes idénticas (SHA-256) en test | 0 |
-
-**Huella SHA-256 del manifiesto general:**  
-`61ab2328e8a89263a9fd08a6577fb82069aa3a29d8a63cd49fa42b24447d71e2`
-
-**Huella SHA-256 del `verified_test_manifest.csv` final:**  
-`c22ea5efd511ca82a3889ed08c2b79ae44c655bbfbddaa844f12d800169cfc1c`
 
 **Resultado registrado:** `ESTADO: APTO PARA EVALUACION EXTERNA` (3 de noviembre de 2026). Los hashes corresponden a **archivos de manifiesto**, no constituyen por sí mismos una huella agregada de todo el dataset.
 
