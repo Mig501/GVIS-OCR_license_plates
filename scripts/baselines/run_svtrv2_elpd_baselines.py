@@ -15,7 +15,6 @@ import hashlib
 import json
 import os
 from pathlib import Path
-import subprocess
 import sys
 import tempfile
 import time
@@ -33,6 +32,42 @@ EXPECTED_CHECKPOINT_SHA = {
     'tiny': '684f23bc3a2b1f724cadfd275e1a185456dd51b5e56c8830780d1998e90f77f6',
     'small': '4c4e21c8eabd7a38519d9f10d6ffa286d470a07b1a8976109fe2b995a9414970',
 }
+
+
+def read_git_commit(repo: Path) -> str:
+    """Read a checkout's HEAD without requiring the git executable (Apptainer)."""
+    git_dir = repo / '.git'
+    if git_dir.is_file():  # git worktree: .git holds 'gitdir: ...'
+        pointer = git_dir.read_text(encoding='utf-8').strip()
+        if not pointer.startswith('gitdir: '):
+            raise RuntimeError(f'Invalid Git metadata: {git_dir}')
+        git_dir = Path(pointer.removeprefix('gitdir: ').strip())
+        if not git_dir.is_absolute():
+            git_dir = (repo / git_dir).resolve()
+    if not git_dir.is_dir():
+        raise FileNotFoundError(f'Missing .git metadata: {git_dir}')
+    head = (git_dir / 'HEAD').read_text(encoding='utf-8').strip()
+    if head.startswith('ref: '):
+        ref = head[5:]
+        ref_path = git_dir / ref
+        if ref_path.is_file():
+            commit = ref_path.read_text(encoding='utf-8').strip()
+        else:
+            packed_refs = git_dir / 'packed-refs'
+            commit = None
+            if packed_refs.is_file():
+                for line in packed_refs.read_text(encoding='utf-8').splitlines():
+                    parts = line.split()
+                    if len(parts) == 2 and parts[1] == ref:
+                        commit = parts[0]
+                        break
+            if commit is None:
+                raise RuntimeError(f'Cannot resolve Git reference {ref!r} in {git_dir}')
+    else:
+        commit = head  # detached HEAD
+    if len(commit) != 40 or any(c not in '0123456789abcdefABCDEF' for c in commit):
+        raise RuntimeError(f'Invalid checkout commit in {git_dir}: {commit!r}')
+    return commit.lower()
 
 
 def sha256_file(path: Path) -> str:
@@ -289,7 +324,7 @@ def main():
         parser.error('batch-size debe ser positivo')
     if not OPENOCR.is_dir():
         raise FileNotFoundError(f'OpenOCR no clonado en {OPENOCR}')
-    commit = subprocess.check_output(['git', '-C', str(OPENOCR), 'rev-parse', 'HEAD'], text=True).strip()
+    commit = read_git_commit(OPENOCR)
     if commit != EXPECTED_REPO_COMMIT:
         raise RuntimeError(f'Commit de OpenOCR no coincide: {commit}')
     rows = load_manifest()
