@@ -130,16 +130,7 @@ SVTRv2-Small mejora claramente a Tiny según la coincidencia exacta del texto vi
 
 **Importante:** las métricas parciales de UC3M-LP no son directamente comparables con EM/CER completos de ELPD. La coincidencia exacta frente al texto visible también es una métrica auxiliar con sesgos propios.
 
-## 5. Notas breves para interpretar las hojas (tutor)
-
-- **Truncamiento extremo y salida vacía:** el modelo devuelve uno o ningún carácter aun cuando se distinguen varios en la placa.
-- **Omisión en matrículas de dos líneas:** puede reconocer la parte superior y perder letras visibles de la inferior.
-- **Inserción o repetición de caracteres:** se dan predicciones de longitud excesiva; solo es un error seguro si exceden la longitud original o se altera texto conocido.
-- **Anonimización (`*`):** muchas inserciones frente al GT visible pueden corresponder a caracteres ocultos y **no son errores confirmados**.
-- **Imágenes difíciles:** oscuridad, brillo excesivo y perspectiva aparecen asociados a varios fallos, sin causalidad probada.
-- **Confianza alta no equivale a acierto:** pueden faltar caracteres visibles con puntuaciones superiores a 0,9.
-
-## 6. Conclusión y siguientes pasos
+## 5. Conclusión y siguientes pasos
 
 **SVTRv2-Small mejora significativamente a SVTRv2-Tiny en el diagnóstico del texto visible**, pero conserva truncamientos severos, omisiones en matrículas de dos líneas y algunas predicciones más largas que la propia matrícula. La gran proporción de discrepancias clasificadas como inserciones está **amplificada por las posiciones anonimizadas**; por tanto, no debe presentarse sin matices como una tasa de errores de inserción real.
 

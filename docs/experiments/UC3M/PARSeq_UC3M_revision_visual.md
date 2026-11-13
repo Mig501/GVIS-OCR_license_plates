@@ -83,15 +83,6 @@ Las hojas muestran también **rectángulos grises de anonimización** que interr
 - En un mismo caso se pueden observar un error real de reconocimiento y una discrepancia artificial de longitud debida a la máscara.
 - Conviene validar una métrica que permita que `*` represente una posición de carácter desconocido **o un hueco omitido en la salida**, y registrar separadamente la cobertura de caracteres visibles, longitud y errores por formato de placa. La definición exacta debe decidirse antes de recalcular la clasificación final de los cuatro modelos.
 
-## 5. Notas breves para el tutor
-
-- **Truncamientos pronunciados**, especialmente al procesar matrículas con caracteres en dos filas; también ocurren en placas de una fila.
-- **Omisión de letras claramente visibles** al final de algunas matrículas (`336*LS* → 3361`, `694**XM → 694`).
-- **Repeticiones de letras y números**, con algunas predicciones más largas que las siete posiciones originales (`505**WW → 5050WWWW`).
-- **Errores con confianza elevada**, incluidos truncamientos relevantes (0,807–0,940 en ejemplos revisados).
-- **Fallos asociados visualmente a mala iluminación, desenfoque y perspectiva**, sin causalidad establecida.
-- **Precaución con la anonimización:** parte de las «inserciones» y del bajo EM parcial son consecuencias del modo de comparar con `*`, no errores necesariamente demostrados del reconocimiento.
-
-## 6. Conclusión provisional
+## 5. Conclusión provisional
 
 PARSeq muestra **buena transcripción de los cinco caracteres conocidos** bajo el diagnóstico de texto visible, pero la inspección identifica fallos reales de **truncamiento**, **omisión de letras**, **algunas repeticiones** y **errores de alta confianza**. Las posiciones anonimizadas condicionan mucho la evaluación automática: las conclusiones sobre número y tipo exacto de errores deben formularse con precaución. Esta revisión visual queda cerrada para PARSeq y puede usarse como plantilla para SVTRv2-Tiny, SVTRv2-Small y MDiff4STR-Small.

@@ -109,24 +109,14 @@ La clasificación automática de inserciones/sustituciones/eliminaciones en `err
 
 El comportamiento también difiere de ELPD: allí no se observaron truncamientos graves de MDiff4STR-Small en la revisión visual; **sí aparecen** en UC3M-LP. Esto no prueba por sí solo una pérdida de generalización, pero sí una diferencia descriptiva relevante entre ambos conjuntos de test.
 
-## 6. Notas breves para el tutor
-
-- **Truncamiento de matrículas de dos líneas:** reconoce una fracción de los caracteres de la primera fila y omite los de la segunda, o devuelve un único símbolo.
-- **Omisiones y sustituciones de caracteres visibles:** hay pérdidas verificables que no dependen de las posiciones ocultas.
-- **Prefijos y duplicaciones de letras/números:** algunas predicciones superan incluso la longitud completa anotada.
-- **Posibles confusiones de caracteres similares (`O/0`):** observar caso a caso, sin generalizar la frecuencia.
-- **Imágenes difíciles:** baja iluminación, desenfoque, sobreexposición o perspectiva aparecen entre los casos problemáticos.
-- **Confianza alta no garantiza corrección:** existen errores comprobables con confianza ≥ 0,90.
-- **Los `*` introducen ambigüedad:** no clasificar toda inserción frente al texto visible como fallo real.
-
-## 7. Recomendaciones para cerrar la evaluación
+## 6. Recomendaciones para cerrar la evaluación
 
 1. Definir una **métrica parcial validada** que permita omitir opcionalmente las posiciones anonimizadas y exija conservar los caracteres conocidos en orden, sin premiar inserciones arbitrarias.
 2. Mantener **separadas** la evaluación sobre UC3M-LP y la evaluación completa de EM/CER sobre ELPD.
 3. Agrupar los fallos visuales por matrícula de una/dos líneas, calidad e inclinación, comparando las mismas imágenes entre los cuatro modelos.
 4. Reservar una evaluación de **generalización sin máscaras** para un conjunto externo con etiquetas completas.
 
-## 8. Material revisado y reproducibilidad
+## 7. Material revisado y reproducibilidad
 
 - `all_predictions_review.csv`: 491 filas.
 - `errors.csv`: 404 discrepancias frente al texto visible.

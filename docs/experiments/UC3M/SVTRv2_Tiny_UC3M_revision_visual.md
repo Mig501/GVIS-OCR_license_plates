@@ -120,17 +120,7 @@ Una confianza alta es una **puntuación del modelo**, no una probabilidad calibr
 
 PARSeq transcribe con mucha mayor frecuencia exactamente la cadena de caracteres visibles; Tiny produce más prefijos y más predicciones largas, y en la inspección aparecen omisiones importantes de caracteres conocidos. **No obstante, ambas métricas auxiliares penalizan de forma distinta los caracteres de posiciones anonimizadas** y no representan una tasa de matrícula completa correctamente reconocida.
 
-## 5. Notas breves para el tutor
-
-1. **Prefijos añadidos** (`1`, `8`, `4`, `18`), con casos inequívocos de longitud excedida como `597*LK* → 185970LK7`.
-2. **Truncamientos graves en placas de una fila**: `R*366BD* → R`, `774**JC → 18774`.
-3. **Omisión de la segunda línea** de matrículas cuadradas: `336*LS* → 43361`, `7*03C*M → 47033`.
-4. **Omisiones con confianza alta**: `718**NT → 718` (0,887), `914**CP → 4914` (0,844).
-5. **Posible incorporación de la letra del distintivo lateral**: `M218*Z* → EM2181Z1` (hipótesis visual localizada).
-6. **Duplicaciones aparentes no siempre erróneas**: `8*14G*Y → 8814GGY` tiene `Dmask=0` y las repeticiones coinciden con posiciones anonimizadas.
-7. **Imágenes oscuras, desenfocadas y con perspectiva** aparecen entre los fallos; no se ha medido su impacto aislado.
-
-## 6. Conclusión provisional
+## 5. Conclusión provisional
 
 SVTRv2-Tiny muestra **numerosos prefijos y caracteres adicionales**, **truncamientos severos** y **omisión de segmentos visibles**, particularmente en algunas matrículas de dos líneas. Su tasa de coincidencia exacta con texto visible (11,20 %) es sensiblemente inferior a la de PARSeq (72,91 %), pero **ninguna de esas cifras permite juzgar sin reservas la matrícula completa** porque el GT incluye posiciones ocultas. Las repeticiones cercanas a `*` deben tratarse como **ambiguas**, salvo que se pueda demostrar un exceso de longitud o una incompatibilidad con posiciones conocidas.
 
