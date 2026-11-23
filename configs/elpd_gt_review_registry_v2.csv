@@ -1,0 +1,56 @@
+image_path,estado,gt_inicial,gt_corregido,observacion
+images/train__BIA3IGJ.png,corregido,BIA3IGJ,BIA31GJ,"Se observa BIA 31GJ; el carácter tras 3 es 1, no I."
+images/train__SG1579.png,corregido,SG1579,SG1579G,Se ve la G final: SG 1579 G.
+images/train__TR05YPP.png,confirmado,TR05YPP,,La imagen muestra TR 05 YPP; la alternativa transforma 0/5 en O/S sin evidencia.
+images/train__B69SXV.png,corregido,B69SXV,B96SXV,La matrícula visible es B 96 SXV; el GT invierte los dígitos 9 y 6.
+images/train__FP193RQ.jpg,confirmado,FP193RQ,,"La matrícula francesa acaba en RQ (Q), no RO; no se recomienda cambiar."
+images/train__JUX703.png,confirmado,JUX703,,La forma anterior a 703 es un distintivo/pegatina; no es la letra M.
+images/val__SWR104.png,confirmado,SWR104,,La B aparece en la banda europea; no forma parte de los caracteres de matrícula.
+images/train__E52CNW.png,corregido,E52CNW,B52CNW,"El primer carácter visible es B, no E."
+images/train__CK7A1DT.png,corregido,CK7A1DT,CK741DT,Se lee ČK [escudo] 741-DT; la A de la etiqueta es realmente el dígito 4.
+images/train__WOBVR142.JPG,confirmado,WOBVR142,,El prefijo adicional B procede de confundir elementos externos del recorte.
+images/train__DB18SCF.png,corregido,DB18SCF,DB48SCF,Se lee DB 48SCF; el GT contiene 1 donde aparece 4.
+images/train__RUDCN890.JPG,confirmado,RUDCN890,,El escudo y la banda alemana D no son caracteres adicionales; Ü se normaliza a U.
+images/val__CO2701AV.png,confirmado,CO2701AV,,"La placa muestra el prefijo provincial CO, con letra O; no C0."
+images/train__BBHZ1007.png,confirmado,BBHZ1007,,La matrícula contiene BB [distintivo] HZ 1007; la tercera B es espuria.
+images/val__MA5320AZ.png,confirmado,MA5320AZ,,La E de la banda azul española no forma parte de MA 5320 AZ.
+images/train__1218ZD25.jpg,confirmado,1218ZD25,,La placa amarilla termina en ZD 25; la alternativa confunde ZD con 20.
+images/val__6402VH25.jpg,confirmado,6402VH25,,Se lee 6402 VH 25; no hay un 1 inicial adicional.
+images/train__AA1399B0.png,ambiguo,AA1399B0,,Se lee AA 1399 BO; la última posición parece O y el formato es compatible con dos letras finales. Confirmar O/0.
+images/val__N50IFSP.png,ambiguo,N50IFSP,,La barra vertical tras N50 puede ser I o 1; la imagen no permite distinguirlo con seguridad.
+images/train__CV594AF.png,confirmado,CV594AF,,Se ve CV 594 AF; la H inicial generada por OCR no está en el texto de la placa.
+images/val__ZDT923_1.png,confirmado,ZDT923,,La B pertenece al distintivo de país en la banda azul; el texto es ZDT-923.
+images/train__VA6811T.png,confirmado,VA6811T,,La E está en la banda azul de España; el texto es VA 6811 T.
+images/train__SR15395.png,confirmado,SR15395,,"Pese al desenfoque, se aprecia SR 15395; la alternativa añade caracteres sin evidencia."
+images/train__QJ9905.png,confirmado,QJ9905,,La matrícula portuguesa muestra QJ-99-05; no hay duplicación inicial de Q.
+images/train__9148SZ66.jpg,confirmado,9148SZ66,,La sección central se lee SZ (no 52) en 9148 SZ 66.
+images/train__DD256CG.jpg,confirmado,DD256CG,,"Los dos primeros signos son letras D: DD-256-CG, no 00."
+images/train__FS371VQ.jpg,confirmado,FS371VQ,,"Se lee FS-371-VQ; la última letra es Q, no O."
+images/train__GBR00F1.png,ambiguo,GBR00F1,,Se ve GB [escudo] R00F1/ROOF1; no es posible decidir O/0 solo por forma. Los OCR también incorporan un O del escudo.
+images/val__G1457B_1.png,confirmado,G1457B,,El último carácter es B; la alternativa lo confunde con 8.
+images/train__KC636D0.png,corregido,KC636D0,KC636DO,"Placa croata KC [escudo] 636-DO; la última posición corresponde a O, no 0."
+images/train__DOHAPE1.png,confirmado,DOHAPE1,,"El supuesto M es el escudo entre DO y HAPE1, no texto."
+images/train__HROD819.JPG,confirmado,HROD819,,La B añadida procede de interpretar erróneamente la banda; texto HRO D819.
+images/train__1AAL547_1.png,confirmado,1AAL547,,La B pertenece al identificador de país; el texto rojo es 1-AAL-547.
+images/train__CZ743ZY.png,confirmado,CZ743ZY,,La B añadida es el identificador del país en la banda azul; el texto comienza CZ.
+images/train__VEL923.png,corregido,VEL923,VFL923,La matrícula visible es VFL-923; el GT confunde la F con E.
+images/train__CM855DY.png,confirmado,CM855DY,,No hay M extra al principio: se lee CM 855 DY junto a la banda azul.
+images/train__DD178TV.jpg,confirmado,DD178TV,,"La placa francesa comienza DD-178-TV, no 00."
+images/train__ABGAP33.png,confirmado,ABGAP33,,El B duplicado no aparece; el distintivo está entre ABG y AP 33.
+images/val__DH605TQ.jpg,confirmado,DH605TQ,,"La S final detectada por OCR procede del distintivo regional, no de la matrícula DH-605-TQ."
+images/train__DB999EM.jpg,confirmado,DB999EM,,La matrícula es DB-999-EM; no comienza por 08.
+images/val__G866969.png,corregido,G866969,G86969,Se ve G 86969; el GT tiene un 6 adicional.
+images/train__ESS1535.png,confirmado,ESS1535,,"Se ve ES [sello] S1535; al unirlo resulta ESS1535, como en el GT."
+images/train__C04279Y.png,corregido,C04279Y,CO4279Y,Se ve CO 4279 Y; la O provincial está mal transcrita como 0.
+images/train__19LPBL1.png,corregido,19LPBL1,19LPB1,Placa neerlandesa 19-LPB-1; el GT contiene una L adicional.
+images/train__ABA1234.JPG,confirmado,ABA1234,,La segunda B no existe; el escudo está entre AB y A1234.
+images/train__B089414.png,confirmado,B089414,,"El primer carácter es B, no 8; se lee B 089414."
+images/train__S0A1468.png,ambiguo,S0A1468,,"Se aprecia S [distintivo] OA 1468; probable O de serie alfabética, no dígito 0. Confirmar O/0."
+images/train__N50IFSP_1.png,ambiguo,N50IFSP,,Segundo recorte de N50IFSP; el carácter después de N50 no permite distinguir I frente a 1 con certeza.
+images/train__DQ040VP.jpg,corregido,DQ040VP,CW871ZR,La matrícula de la imagen es CW-871-ZR; la etiqueta candidata corresponde a otra secuencia.
+images/train__PUS142KP.png,corregido,PUS142KP,PU142KP,La imagen muestra PU [escudo croata] 142-KP: no existe la letra S entre el prefijo y 142.
+images/train__AH004FEZ.png,corregido,AH004FEZ,AH004EZ,Matrícula francesa AH-004-EZ; la F adicional del GT no aparece en la imagen.
+images/train__B176WOW.png,corregido,B176WOW,B276WOW,"Matrícula visible B 276 WOW: el segundo carácter es 2, no 1."
+images/train__04KY53I2.png,corregido,04KY53I2,04KY5312,Matrícula irlandesa 04-KY-5312: el carácter antes del 2 final es el dígito 1.
+images/train__HH07194.PNG,corregido,HH07194,HHG7194,"Matrícula alemana HH G 7194: tras HH aparece la letra G, no el dígito 0."
+images/train__W0T560.png,corregido,W0T560,WOT560,"Matrícula austriaca W OT 560: el segundo signo del grupo es la letra O, no el dígito 0."
