@@ -1,0 +1,3 @@
+image_path,gt_actual,decision,justificacion
+images/train__CX471YT.jpg,CX471YT,NO_VERIFICABLE,Decisión manual final: recorte insuficiente para establecer GT fiable. No utilizar en métricas de GT validado.
+images/train__EL156RR.jpg,EL156RR,NO_VERIFICABLE,Decisión manual final: recorte insuficiente para establecer GT fiable. No utilizar en métricas de GT validado.
