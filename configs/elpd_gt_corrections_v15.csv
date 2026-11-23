@@ -1,0 +1,34 @@
+﻿image_path,gt_actual,gt_corregido,justificacion
+images/train__BIA3IGJ.png,BIA3IGJ,BIA31GJ,"Se observa BIA 31GJ; el carácter tras 3 es 1, no I."
+images/train__SG1579.png,SG1579,SG1579G,Se ve la G final: SG 1579 G.
+images/train__B69SXV.png,B69SXV,B96SXV,La matrícula visible es B 96 SXV; el GT invierte los dígitos 9 y 6.
+images/train__E52CNW.png,E52CNW,B52CNW,"El primer carácter visible es B, no E."
+images/train__CK7A1DT.png,CK7A1DT,CK741DT,Se lee ČK [escudo] 741-DT; la A de la etiqueta es realmente el dígito 4.
+images/train__DB18SCF.png,DB18SCF,DB48SCF,Se lee DB 48SCF; el GT contiene 1 donde aparece 4.
+images/train__KC636D0.png,KC636D0,KC636DO,"Placa croata KC [escudo] 636-DO; la última posición corresponde a O, no 0."
+images/train__VEL923.png,VEL923,VFL923,La matrícula visible es VFL-923; el GT confunde la F con E.
+images/val__G866969.png,G866969,G86969,Se ve G 86969; el GT tiene un 6 adicional.
+images/train__C04279Y.png,C04279Y,CO4279Y,Se ve CO 4279 Y; la O provincial está mal transcrita como 0.
+images/train__19LPBL1.png,19LPBL1,19LPB1,Placa neerlandesa 19-LPB-1; el GT contiene una L adicional.
+images/train__DQ040VP.jpg,DQ040VP,CW871ZR,La matrícula de la imagen es CW-871-ZR; la etiqueta candidata corresponde a otra secuencia.
+images/train__PUS142KP.png,PUS142KP,PU142KP,La imagen muestra PU [escudo croata] 142-KP: no existe la letra S entre el prefijo y 142.
+images/train__AH004FEZ.png,AH004FEZ,AH004EZ,Matrícula francesa AH-004-EZ; la F adicional del GT no aparece en la imagen.
+images/train__B176WOW.png,B176WOW,B276WOW,"Matrícula visible B 276 WOW: el segundo carácter es 2, no 1."
+images/train__04KY53I2.png,04KY53I2,04KY5312,Matrícula irlandesa 04-KY-5312: el carácter antes del 2 final es el dígito 1.
+images/train__HH07194.PNG,HH07194,HHG7194,"Matrícula alemana HH G 7194: tras HH aparece la letra G, no el dígito 0."
+images/train__W0T560.png,W0T560,WOT560,"Matrícula austriaca W OT 560: el segundo signo del grupo es la letra O, no el dígito 0."
+images/train__20CEY44.jpg,20CEY44,EL2828,La matricula visible es EL 28 28; la referencia 20CEY44 no coincide con la imagen.
+images/train__G0CIAPA.png,G0CIAPA,GOCIAPA,Tras G se ve una O (letra) y no el digito cero; matricula visible GO CIAPA.
+images/train__S0A1468.png,S0A1468,SOA1468,"Se lee S OA 1468 (matricula alemana, OA es sufijo de letras tras codigo S)."
+images/train__TR05RGB.jpg,TR05RGB,TR05RBG,Se lee TR 05 RBG; el GT TR05RGB invierte B y G al final.
+images/train__P0A3239.png,P0A3239,POA3239,"Se lee PO [escudo] A3-239; PO es codigo regional, la segunda posicion es O, no cero."
+images/val__9R0Y888.png,9R0Y888,9ROY888,"La matricula belga muestra 9-ROY-888: el caracter tras R es O, no cero."
+images/train__DP92OCN.png,DP92OCN,DP920CN,"La placa francesa muestra DP-920-CN; el tercer carácter del bloque numérico es el dígito 0, no la letra O de la etiqueta DP92OCN."
+images/train__SG59711.png,SG59711,SG49711,"La placa suiza muestra SG-49711, no SG-59711. El primer dígito es 4, inequívoco en imagen original."
+images/val__B0I9374.png,B0I9374,BOI9374,"La placa griega muestra BOI-9374: los tres primeros signos son letras (B, O, I), seguidos de 9374; el GT usaba dígito 0 en lugar de O. Formato griego LLL-NNNN y normalización ASCII."
+images/train__ZE264F0.png,ZE264F0,ZE264FO,"La placa austriaca muestra ZE [escudo de Salzburgo] 264 FO. El último carácter es la letra O del sufijo alfabético FO, no el dígito 0; lectura clara en imagen original."
+images/val__97M03901.png,97M03901,97MO3901,"La matrícula irlandesa muestra 97-MO-3901; MO es el código alfabético de condado y su segundo carácter es la letra O, no el dígito 0."
+images/train__G803IA.png,G803IA,G8031A,"Gibraltar (GBZ): matrícula G 8031 A. La norma de la serie ordinaria desde 2001 exige G + cuatro dígitos + una letra; el trazo estrecho anterior a la A es un 1, no I. Se comprueba en imagen original ampliada; SVTRv2-Small lo transcribió G8031A."
+images/train__S051701.png,S051701,SO51701,"Matrícula suiza del cantón de Soleura (SO): la imagen original presenta SO · 51701. El segundo carácter es la letra O, no el cero; código cantonal SO confirmado por referencia oficial suiza."
+images/train__SR11979.png,SR11979,SRI1979,Matrícula alemana: imagen original ampliada S [sellos] RI 1979. La letra I después de R fue registrada erróneamente como dígito 1; en Alemania la serie tras los sellos lleva 1-2 letras y 1-4 cifras.
+images/train__MG06438.png,MG06438,MGG6438,"Alemania MG [escudo] G 6438: el primer carácter después del escudo es la letra G, no el cero. Los cuatro OCR habían reproducido el GT erróneo."
