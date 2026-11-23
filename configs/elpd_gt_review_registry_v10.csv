@@ -1,0 +1,435 @@
+﻿image_path,estado,gt_inicial,gt_corregido,observacion
+images/train__BIA3IGJ.png,corregido,BIA3IGJ,BIA31GJ,"Se observa BIA 31GJ; el carácter tras 3 es 1, no I."
+images/train__SG1579.png,corregido,SG1579,SG1579G,Se ve la G final: SG 1579 G.
+images/train__TR05YPP.png,confirmado,TR05YPP,,La imagen muestra TR 05 YPP; la alternativa transforma 0/5 en O/S sin evidencia.
+images/train__B69SXV.png,corregido,B69SXV,B96SXV,La matrícula visible es B 96 SXV; el GT invierte los dígitos 9 y 6.
+images/train__FP193RQ.jpg,confirmado,FP193RQ,,"La matrícula francesa acaba en RQ (Q), no RO; no se recomienda cambiar."
+images/train__JUX703.png,confirmado,JUX703,,La forma anterior a 703 es un distintivo/pegatina; no es la letra M.
+images/val__SWR104.png,confirmado,SWR104,,La B aparece en la banda europea; no forma parte de los caracteres de matrícula.
+images/train__E52CNW.png,corregido,E52CNW,B52CNW,"El primer carácter visible es B, no E."
+images/train__CK7A1DT.png,corregido,CK7A1DT,CK741DT,Se lee ČK [escudo] 741-DT; la A de la etiqueta es realmente el dígito 4.
+images/train__WOBVR142.JPG,confirmado,WOBVR142,,El prefijo adicional B procede de confundir elementos externos del recorte.
+images/train__DB18SCF.png,corregido,DB18SCF,DB48SCF,Se lee DB 48SCF; el GT contiene 1 donde aparece 4.
+images/train__RUDCN890.JPG,confirmado,RUDCN890,,El escudo y la banda alemana D no son caracteres adicionales; Ü se normaliza a U.
+images/val__CO2701AV.png,confirmado,CO2701AV,,"La placa muestra el prefijo provincial CO, con letra O; no C0."
+images/train__BBHZ1007.png,confirmado,BBHZ1007,,La matrícula contiene BB [distintivo] HZ 1007; la tercera B es espuria.
+images/val__MA5320AZ.png,confirmado,MA5320AZ,,La E de la banda azul española no forma parte de MA 5320 AZ.
+images/train__1218ZD25.jpg,confirmado,1218ZD25,,La placa amarilla termina en ZD 25; la alternativa confunde ZD con 20.
+images/val__6402VH25.jpg,confirmado,6402VH25,,Se lee 6402 VH 25; no hay un 1 inicial adicional.
+images/train__AA1399B0.png,ambiguo,AA1399B0,,Ultima posicion B0/BO indistinguible con suficiente fiabilidad; mantener AA1399B0 provisionalmente.
+images/val__N50IFSP.png,ambiguo,N50IFSP,,Placa escocesa N50IFSP: el I/1 en la cuarta posicion no se distingue con seguridad.
+images/train__CV594AF.png,confirmado,CV594AF,,Se ve CV 594 AF; la H inicial generada por OCR no está en el texto de la placa.
+images/val__ZDT923_1.png,confirmado,ZDT923,,La B pertenece al distintivo de país en la banda azul; el texto es ZDT-923.
+images/train__VA6811T.png,confirmado,VA6811T,,La E está en la banda azul de España; el texto es VA 6811 T.
+images/train__SR15395.png,confirmado,SR15395,,"Pese al desenfoque, se aprecia SR 15395; la alternativa añade caracteres sin evidencia."
+images/train__QJ9905.png,confirmado,QJ9905,,La matrícula portuguesa muestra QJ-99-05; no hay duplicación inicial de Q.
+images/train__9148SZ66.jpg,confirmado,9148SZ66,,La sección central se lee SZ (no 52) en 9148 SZ 66.
+images/train__DD256CG.jpg,confirmado,DD256CG,,"Los dos primeros signos son letras D: DD-256-CG, no 00."
+images/train__FS371VQ.jpg,confirmado,FS371VQ,,"Se lee FS-371-VQ; la última letra es Q, no O."
+images/train__GBR00F1.png,ambiguo,GBR00F1,,El escudo central y las dos posiciones O/0 impiden confirmar una lectura distinta de GBR00F1.
+images/val__G1457B_1.png,confirmado,G1457B,,El último carácter es B; la alternativa lo confunde con 8.
+images/train__KC636D0.png,corregido,KC636D0,KC636DO,"Placa croata KC [escudo] 636-DO; la última posición corresponde a O, no 0."
+images/train__DOHAPE1.png,confirmado,DOHAPE1,,"El supuesto M es el escudo entre DO y HAPE1, no texto."
+images/train__HROD819.JPG,confirmado,HROD819,,La B añadida procede de interpretar erróneamente la banda; texto HRO D819.
+images/train__1AAL547_1.png,confirmado,1AAL547,,La B pertenece al identificador de país; el texto rojo es 1-AAL-547.
+images/train__CZ743ZY.png,confirmado,CZ743ZY,,La B añadida es el identificador del país en la banda azul; el texto comienza CZ.
+images/train__VEL923.png,corregido,VEL923,VFL923,La matrícula visible es VFL-923; el GT confunde la F con E.
+images/train__CM855DY.png,confirmado,CM855DY,,No hay M extra al principio: se lee CM 855 DY junto a la banda azul.
+images/train__DD178TV.jpg,confirmado,DD178TV,,"La placa francesa comienza DD-178-TV, no 00."
+images/train__ABGAP33.png,confirmado,ABGAP33,,El B duplicado no aparece; el distintivo está entre ABG y AP 33.
+images/val__DH605TQ.jpg,confirmado,DH605TQ,,"La S final detectada por OCR procede del distintivo regional, no de la matrícula DH-605-TQ."
+images/train__DB999EM.jpg,confirmado,DB999EM,,La matrícula es DB-999-EM; no comienza por 08.
+images/val__G866969.png,corregido,G866969,G86969,Se ve G 86969; el GT tiene un 6 adicional.
+images/train__ESS1535.png,confirmado,ESS1535,,"Se ve ES [sello] S1535; al unirlo resulta ESS1535, como en el GT."
+images/train__C04279Y.png,corregido,C04279Y,CO4279Y,Se ve CO 4279 Y; la O provincial está mal transcrita como 0.
+images/train__19LPBL1.png,corregido,19LPBL1,19LPB1,Placa neerlandesa 19-LPB-1; el GT contiene una L adicional.
+images/train__ABA1234.JPG,confirmado,ABA1234,,La segunda B no existe; el escudo está entre AB y A1234.
+images/train__B089414.png,confirmado,B089414,,"El primer carácter es B, no 8; se lee B 089414."
+images/train__S0A1468.png,corregido,S0A1468,SOA1468,"Se lee S OA 1468 (matricula alemana, OA es sufijo de letras tras codigo S)."
+images/train__N50IFSP_1.png,ambiguo,N50IFSP,,Otra foto de N50IFSP; mismo problema I/1; conservar provisionalmente.
+images/train__DQ040VP.jpg,corregido,DQ040VP,CW871ZR,La matrícula de la imagen es CW-871-ZR; la etiqueta candidata corresponde a otra secuencia.
+images/train__PUS142KP.png,corregido,PUS142KP,PU142KP,La imagen muestra PU [escudo croata] 142-KP: no existe la letra S entre el prefijo y 142.
+images/train__AH004FEZ.png,corregido,AH004FEZ,AH004EZ,Matrícula francesa AH-004-EZ; la F adicional del GT no aparece en la imagen.
+images/train__B176WOW.png,corregido,B176WOW,B276WOW,"Matrícula visible B 276 WOW: el segundo carácter es 2, no 1."
+images/train__04KY53I2.png,corregido,04KY53I2,04KY5312,Matrícula irlandesa 04-KY-5312: el carácter antes del 2 final es el dígito 1.
+images/train__HH07194.PNG,corregido,HH07194,HHG7194,"Matrícula alemana HH G 7194: tras HH aparece la letra G, no el dígito 0."
+images/train__W0T560.png,corregido,W0T560,WOT560,"Matrícula austriaca W OT 560: el segundo signo del grupo es la letra O, no el dígito 0."
+images/train__20CEY44.jpg,corregido,20CEY44,EL2828,La matricula visible es EL 28 28; la referencia 20CEY44 no coincide con la imagen.
+images/train__BQ360YQ.jpg,ambiguo,BQ360YQ,,Francesa: la Q del GT puede parecer O en la fotografia; no sustituir BQ/YQ por BO/YO sin verificar.
+images/train__6176YM27.jpg,ambiguo,6176YM27,,Cifras iniciales oblicuas y borrosas: parecen diferentes de 6176 pero la lectura completa no es suficientemente segura.
+images/train__FQ032EC.jpg,confirmado,FQ032EC,,"FQ-032-EC; Q se confunde visualmente con O, y los OCR añaden el distintivo derecho."
+images/train__G0CIAPA.png,corregido,G0CIAPA,GOCIAPA,Tras G se ve una O (letra) y no el digito cero; matricula visible GO CIAPA.
+images/train__CX471YT.jpg,ambiguo,CX471YT,,Perspectiva fuerte y extremo derecho no legible: no se puede comprobar completamente CX471YT.
+images/train__SB90TZI_1.png,confirmado,SB90TZI,,Se lee SB 90 TZI aunque el color degrada el OCR.
+images/train__5122WQ06.jpg,ambiguo,5122WQ06,,La letra Q puede confundirse con O en una placa francesa; no se puede demostrar que WQ sea erróneo.
+images/train__DQ824BE.png,ambiguo,DQ824BE,,DQ/00 visualmente ambiguos por desenfoque; no corregir DQ824BE sin mejor evidencia.
+images/train__B111TXS.png,confirmado,B111TXS,,Se lee B 111 TXS; los tres unos parecen letras I a los OCR.
+images/train__DK752QM.jpg,confirmado,DK752QM,,Se lee DK-752-QM; sufijo de departamento no es caracter del GT.
+images/train__0648BU.png,confirmado,0648BU,,Se lee 06-48-BU; los caracteres de la banda y distintivo son ajenos al GT.
+images/val__CS229EP.jpg,confirmado,CS229EP,,Se lee CS-229-EP; los modelos incluyen indicadores de los extremos.
+images/train__43TFQ92.png,confirmado,43TFQ92,,Se lee 43 TFQ 92; letras confusas pero GT compatible con la imagen.
+images/train__EL156RR.jpg,ambiguo,EL156RR,,El recorte solo permite leer 56-RR; no demuestra que el GT EL156RR deba reemplazarse por la parte visible.
+images/train__ZDT923.png,confirmado,ZDT923,,Se lee ZDT-923; los distintivos de ambos extremos no cuentan.
+images/train__IF82EVA.png,confirmado,IF82EVA,,Se ve IF 82 EVA; la imagen tiene desenfoque y tonalidad rojiza.
+images/train__DJ097DJ.png,confirmado,DJ097DJ,,Se lee DJ-097-DJ; los caracteres nacionales no se incluyen.
+images/train__DQ200PB_1.png,ambiguo,DQ200PB,,DQ/00 visualmente ambiguos en imagen oscura; no modificar DQ200PB sin mejor imagen.
+images/train__QAAN006.png,confirmado,QAAN006,,Se lee Q-AAN-006; el escudo central se excluye.
+images/train__WW238BB.jpg,confirmado,WW238BB,,Se lee WW-238-BB; confusiones B/8 de los modelos.
+images/val__WUDY993.JPG,confirmado,WUDY993,,"Se lee WÜ DY 993; la normalizacion ASCII convierte Ü en U, tal como el GT WUDY993."
+images/train__CY381NR.png,confirmado,CY381NR,,Se lee CY 381NR; escudo y distintivos italianos excluidos.
+images/train__3372HKW.png,confirmado,3372HKW,,Se lee 3372 HKW; algun modelo repite el primer 3.
+images/train__B75MCY.png,confirmado,B75MCY,,Se lee B 75 MCY; el GT es compatible con la imagen.
+images/train__EM279BL.jpg,confirmado,EM279BL,,Se lee EM-279-BL; la B de la banda europea no forma parte del GT.
+images/train__MUO003.png,confirmado,MUO003,,"Se lee MUO 003; O como letra en el bloque inicial y 0 en cifras, compatible con GT."
+images/train__TR05RGB.jpg,corregido,TR05RGB,TR05RBG,Se lee TR 05 RBG; el GT TR05RGB invierte B y G al final.
+images/train__1BQQ250.png,confirmado,1BQQ250,,Se lee 1-BQQ-250; primera posicion 1 y sufijo QQ.
+images/train__ACJ1698.png,confirmado,ACJ1698,,Se lee AC J1698; los distintivos centrales no son letras.
+images/train__CA6183BS.png,confirmado,CA6183BS,,Se lee CA-6183-BS; la E de la banda europea no forma parte de la matricula.
+images/train__CY381NR_1.png,confirmado,CY381NR,,Segunda foto de CY381NR; misma lectura que el numero 28.
+images/train__IF18YMH_1.png,confirmado,IF18YMH,,Se lee IF 18 YMH; el I inicial queda tenue por la iluminacion.
+images/train__IF99STK_1.png,ambiguo,IF99STK,,Izquierda poco visible; no se puede comprobar de forma inequívoca si figura I antes de F99STK.
+images/train__LJFJ551.png,confirmado,LJFJ551,,"Se lee LJ FJ-551; escudo de ciudad, no letra O."
+images/train__OG883S.png,confirmado,OG883S,,Se lee OG 883-S; escudo croata y emblema derecho no son caracteres.
+images/train__P0A3239.png,corregido,P0A3239,POA3239,"Se lee PO [escudo] A3-239; PO es codigo regional, la segunda posicion es O, no cero."
+images/train__ZH818159.png,confirmado,ZH818159,,Se lee ZH 818 159; emblemas laterales excluidos.
+images/val__9R0Y888.png,corregido,9R0Y888,9ROY888,"La matricula belga muestra 9-ROY-888: el caracter tras R es O, no cero."
+images/val__CR804HW.png,confirmado,CR804HW,,Se lee CR 804HW; los distintivos laterales no se incluyen.
+images/train__AAAA111.JPG,confirmado,AAAA111,,Se lee AA AA 111; adhesivos centrales no forman parte del GT.
+images/train__BS897PN.png,confirmado,BS897PN,,Se lee BS 897PN; los distintivos laterales no se incluyen.
+images/train__CK1007.png,confirmado,CK1007,,Se lee CK1007; distintivos húngaros y el sello no forman parte del GT.
+images/train__GAJ169.JPG,confirmado,GAJ169,,Se lee G [sellos] AJ169; los sellos de inspección no son letras B.
+images/train__MF01444.png,confirmado,MF01444,,Se lee MF-01444; la E corresponde a la banda europea y no al texto de placa.
+images/train__ROWCQ66.png,confirmado,ROWCQ66,,Compatible con ROW CQ 66; los distintivos y el desenfoque inducen prefijos OCR adicionales.
+images/val__ER140CY.jpg,confirmado,ER140CY,,Se lee ER-140-CY; la banda europea y el distintivo regional no forman parte del GT.
+images/train__B101JGV.png,ambiguo,B101JGV,,"Foto muy borrosa; la referencia B101JGV resulta plausible, pero no pueden confirmarse con certeza todos los caracteres."
+images/train__DY378ZH.jpg,confirmado,DY378ZH,,Se lee DY-378-ZH; los OCR incorporan letras ajenas por bandas laterales.
+images/train__P01995.png,confirmado,P01995,,Se lee P-01995; fecha y texto inferior no son caracteres de matrícula.
+images/train__AP645VY.jpg,confirmado,AP645VY,,Se lee AP-645-VY; los códigos y adhesivos laterales no forman parte del GT.
+images/train__L0JJ1011.png,ambiguo,L0JJ1011,,"La placa muestra LÖ JJ 1011, con Ö alemana. Se necesita definir la transliteración/normalización del carácter con diéresis antes de reemplazar el 0 de L0JJ1011."
+images/train__NRW45317.JPG,confirmado,NRW45317,,Se lee NRW 4-5317; el escudo es ajeno a la secuencia alfanumérica.
+images/train__VD5886Z.png,confirmado,VD5886Z,,Se lee VD-5886-Z; distintivos suizos excluidos del texto.
+images/train__6473GZR.png,confirmado,6473GZR,,Se lee 6473 GZR; la E azul no forma parte de la matrícula.
+images/train__AA508ST.png,confirmado,AA508ST,,Se lee AA-508-ST; distintivo 74 queda fuera del GT.
+images/train__AA601DQ.png,confirmado,AA601DQ,,Se lee AA-601-DQ en la placa roja; los números 10/09 de vigencia no son texto del GT.
+images/train__AM113DA.png,confirmado,AM113DA,,La imagen oscura es compatible con AM 113 DA; no hay evidencia suficiente para sustituirla.
+images/train__AR21346.png,confirmado,AR21346,,Se lee AR-21346; los escudos suizos de ambos extremos no cuentan como texto.
+images/train__AT688KL.jpg,ambiguo,AT688KL,,"Fotografía muy comprimida y borrosa: el bloque AT688KL es plausible, pero no se distingue con fiabilidad toda la secuencia."
+images/train__AZ998DA.png,confirmado,AZ998DA,,"La placa muy oscura es compatible con AZ-998-DA, sin evidencia clara de otra etiqueta."
+images/train__CA188VG.jpg,confirmado,CA188VG,,Se lee CA-188-VG; distintivo regional del extremo derecho se excluye.
+images/train__CG673BQ.jpg,confirmado,CG673BQ,,"Se ve CG-673-BQ; la letra Q final tiene cola visible, no es D ni 0."
+images/train__DL076WT.jpg,confirmado,DL076WT,,"Se lee DL-076-WT; el modelo confunde caracteres, pero el GT es fiel a la imagen."
+images/train__DW664GT.jpg,confirmado,DW664GT,,Se lee DW-664-GT; el número 66 de la banda derecha queda excluido.
+images/train__MVL422.png,confirmado,MVL422,,Se lee MVL 4-22; las pegatinas de inspección no son caracteres.
+images/train__W178JZ.jpg,confirmado,W178JZ,,Se lee W-178-JZ; los modelos incluyen señales gráficas laterales.
+images/val__B61RCV.png,confirmado,B61RCV,,"El texto parece B 61 RCV, compatible con el GT pese al desenfoque."
+images/val__CT038ZN_1.png,confirmado,CT038ZN,,Se lee CT 038ZN; el emblema regional TN no integra el texto.
+images/val__TG80229.png,confirmado,TG80229,,Se lee TG 80229; emblemas cantonales no forman parte del GT.
+images/train__42MR22.png,confirmado,42MR22,,Se lee 42 MR 22; la franja de vigencia amarilla queda excluida.
+images/train__AA821PT.png,confirmado,AA821PT,,Se lee AA-821-PT; distintivo 91 a la derecha no integra la matrícula.
+images/train__AI20291_1.png,confirmado,AI20291,,Se lee AI-20291; escudo cantonal derecho y emblema central no son caracteres.
+images/train__BB128ZB.jpg,confirmado,BB128ZB,,Se lee BB-128-ZB; el distintivo 66 es ajeno al GT.
+images/train__BE19260.png,confirmado,BE19260,,Se lee BE-19260; pegatinas y escudo suizos excluidos.
+images/train__BF283TX.png,ambiguo,BF283TX,,"Resolución muy baja de BF283TX, impide verificar con alta seguridad los caracteres centrales y finales."
+images/train__BH109XW.jpg,ambiguo,BH109XW,,El final de BH-109-XW puede resultar visualmente ambiguo W/H por los píxeles; no se justifica cambiar el GT.
+images/train__BH66597.png,confirmado,BH66597,,Se lee BH 66597; pegatina entre letras y dígitos no es O.
+images/train__BY187RT.jpg,confirmado,BY187RT,,Se lee BY-187-RT; los códigos de departamento del extremo quedan excluidos.
+images/train__CG988FL.jpg,confirmado,CG988FL,,Se lee CG-988-FL; la F europea no es parte del texto.
+images/train__CJ300YS.jpg,confirmado,CJ300YS,,Se lee CJ-300-YS; la F europea y el código 80 no se incluyen.
+images/train__CJ447RV.jpg,confirmado,CJ447RV,,Se lee CJ-447-RV; el distintivo departamental no cuenta como carácter.
+images/train__CM229MN.png,confirmado,CM229MN,,Se lee CM 229MN; símbolo central y bandera regional quedan excluidos.
+images/train__CQ378MH.jpg,confirmado,CQ378MH,,Se lee CQ-378-MH; la Q de la placa no se transforma en O.
+images/train__CS903QC.jpg,confirmado,CS903QC,,Se lee CS-903-QC; la Q del bloque final tiene morfología de Q y debe mantenerse.
+images/train__CT038ZN.png,confirmado,CT038ZN,,Se lee CT 038ZN; se excluyen emblemas y número regional TN.
+images/train__DP92OCN.png,corregido,DP92OCN,DP920CN,"La placa francesa muestra DP-920-CN; el tercer carácter del bloque numérico es el dígito 0, no la letra O de la etiqueta DP92OCN."
+images/train__DY769ZV.jpg,confirmado,DY769ZV,,Se lee DY-769-ZV; el distintivo 12 queda excluido.
+images/train__EC010PW.jpg,confirmado,EC010PW,,Se lee EC-010-PW; emblema regional 06 queda excluido.
+images/train__EE972DY.jpg,confirmado,EE972DY,,Se lee EE-972-DY; el distintivo departamental queda excluido.
+images/train__EL540EV.jpg,confirmado,EL540EV,,Se lee EL-540-EV; distintivo 06 no es parte del texto.
+images/train__EL902WL.jpg,confirmado,EL902WL,,Se lee EL-902-WL; la banda del extremo derecho no integra la matrícula.
+images/train__EP396QP.jpg,confirmado,EP396QP,,"Se lee EP-396-QP; la Q tiene rasgo inferior, y 89 es código del distintivo lateral."
+images/train__ESCM1106.png,confirmado,ESCM1106,,Se distingue ES [sellos] CM 1106; los símbolos de la revisión técnica no son caracteres.
+images/train__EZ931ZH.jpg,confirmado,EZ931ZH,,Se lee EZ-931-ZH; la región en la banda derecha se excluye.
+images/train__FG393BF.jpg,confirmado,FG393BF,,Se lee FG-393-BF; el distintivo 69 no forma parte del texto.
+images/train__FH746CT.jpg,confirmado,FH746CT,,Se lee FH-746-CT; la banda europea F y los números del lado derecho no se incluyen.
+images/train__FM335RQ.jpg,confirmado,FM335RQ,,Se lee FM-335-RQ; la letra Q final es compatible con la forma visible de la placa.
+images/train__FN979XC.jpg,confirmado,FN979XC,,Se lee FN-979-XC; el distintivo regional 68 se excluye.
+images/train__FP055HQ.jpg,confirmado,FP055HQ,,"Se lee FP-055-HQ; la letra Q final se conserva, el distintivo 25 se excluye."
+images/train__FP773DS.jpg,confirmado,FP773DS,,Se lee FP-773-DS; distintivo lateral 35 ajeno a la referencia.
+images/train__FR400PK.jpg,confirmado,FR400PK,,Se lee FR-400-PK; los modelos crean secuencias extra inexistentes.
+images/train__GE1176_1.png,confirmado,GE1176,,"Se lee G [escudos] E 1176; solo la matrícula, excluidos los emblemas."
+images/train__LG9.JPG,confirmado,LG9,,Se lee L [adhesivos] G 9 en la placa alemana; los adhesivos no se transcriben.
+images/train__NTH299.png,confirmado,NTH299,,Se lee NTH-299; el dibujo del extremo derecho no es una letra.
+images/train__SG59711.png,corregido,SG59711,SG49711,"La placa suiza muestra SG-49711, no SG-59711. El primer dígito es 4, inequívoco en imagen original."
+images/train__SUFF170.JPG,confirmado,SUFF170,,Se lee SU [sellos] FF 170; los sellos se excluyen.
+images/train__SYK63.png,ambiguo,SYK63,,Fotografía demasiado desenfocada para confirmar si tras el distintivo figura Y o V en SYK63/SVK63. No cambiar.
+images/train__TV00007.png,confirmado,TV00007,,Se lee TV [escudo] 00007; el escudo eslovaco queda fuera.
+images/train__V5543EJ.png,confirmado,V5543EJ,,"Se lee V 5543 EJ, sin incorporar la E de la banda europea."
+images/train__W31491N.png,confirmado,W31491N,,"Se lee W 31491 N, sin incorporar escudo austriaco central ni banda."
+images/train__XK15588.png,confirmado,XK15588,,Se lee XK 15588 en placa noruega; la pegatina roja no es un carácter.
+images/train__ZH86183.png,confirmado,ZH86183,,"Se lee ZH-86183, excluidos los emblemas laterales suizos."
+images/val__1QAF050.png,confirmado,1QAF050,,Se lee 1-QAF-050; el sello rojo y la banda belga no son caracteres.
+images/val__AY673JT.jpg,confirmado,AY673JT,,Se lee AY-673-JT; el código regional 01 se excluye.
+images/val__B0I9374.png,corregido,B0I9374,BOI9374,"La placa griega muestra BOI-9374: los tres primeros signos son letras (B, O, I), seguidos de 9374; el GT usaba dígito 0 en lugar de O. Formato griego LLL-NNNN y normalización ASCII."
+images/val__ER401KA.jpg,confirmado,ER401KA,,Se lee ER-401-KA; el distintivo 04 lateral se excluye.
+images/val__SG1153U.png,confirmado,SG1153U,,"Se lee SG-1153-U, sin el escudo y el emblema regional de la placa suiza."
+images/train__SGE6783.png,confirmado,SGE6783,,Se lee SG [escudo] E6-783; el escudo central no integra el GT.
+images/train__AEK5017.png,confirmado,AEK5017,,Se lee AEK-50-17; los dos adhesivos en el centro no son letras ni números.
+images/train__B172WAW.png,ambiguo,B172WAW,,"Imagen roja tintada y borrosa: B172WAW es plausible, pero la lectura de 172 no puede certificarse con seguridad."
+images/train__BJ814JR.jpg,confirmado,BJ814JR,,Se lee BJ-814-JR; el distintivo territorial a la derecha no pertenece a la referencia.
+images/train__BMW6220.png,confirmado,BMW6220,,Se lee B [sello] MW 6220; el sello alemán no se incluye.
+images/train__BTF857H.png,confirmado,BTF857H,,Se lee B [sello] TF 857H; se excluye el sello.
+images/train__LBGM3358.png,ambiguo,LBGM3358,,Fotografía oscura y borrosa de LBGM3358; no se distingue de forma inequívoca M frente a H en el grupo final.
+images/train__TMD038.png,confirmado,TMD038,,Se lee TMD [distintivo] 038; la pegatina no se incluye.
+images/val__B121PHD.png,ambiguo,B121PHD,,Imagen excesivamente comprimida de B121PHD; no permite validar todos los caracteres de forma fiable.
+images/val__B69BMA.png,ambiguo,B69BMA,,Imagen de B69BMA muy desenfocada; la secuencia parece plausible pero se mantiene pendiente de verificación.
+images/train__SAP4686.png,ambiguo,SAP4686,,La placa SAP4686 es muy desenfocada; no puede descartarse con certeza un carácter adicional antes de AP.
+images/train__W584RP.png,confirmado,W584RP,,Se lee W [escudo] 584 RP; correcto excluyendo escudo austriaco.
+images/train__00LH2877.png,confirmado,00LH2877,,Se lee 00-LH-2877; el indicativo IRL de banda izquierda no se incluye.
+images/train__4293HF.png,confirmado,4293HF,,"Se lee 42-93-HF, sin el código de vigencia de la banda amarilla."
+images/train__45XM6.png,confirmado,45XM6,,"Se lee 45-XM-6, sin la B de la banda europea."
+images/train__6099TV66.jpg,confirmado,6099TV66,,Se lee 6099 TV 66; el 66 es parte del número francés antiguo.
+images/train__779PRA75.jpg,confirmado,779PRA75,,Se lee 779 PRA 75; el 75 pertenece a la referencia de esta placa.
+images/train__84R2712A_1.png,confirmado,84R2712A,,Se lee 84R2712A con caracteres completos visibles.
+images/train__996AHG.png,confirmado,996AHG,,Se lee 996-AHG; el emblema VW de la derecha no forma parte de matrícula.
+images/train__ANCL550.png,confirmado,ANCL550,,Se lee AN [sellos] CL 550; los sellos no se transcriben.
+images/train__AY963FL.jpg,confirmado,AY963FL,,Se lee AY-963-FL; el distintivo territorial 25 queda fuera.
+images/train__B449AP.png,confirmado,B449AP,,Se lee B [escudo austriaco] 449 AP; el escudo no se transcribe.
+images/train__BAXB500.png,confirmado,BAXB500,,Se lee BA [escudo eslovaco] XB 500; se descarta una O adicional inferida por SVTRv2.
+images/train__BN15858.png,confirmado,BN15858,,Se lee BN-158-58; la banda europea D no pertenece al texto.
+images/train__DD454YP.jpg,confirmado,DD454YP,,Se lee DD-454-YP; las letras sugeridas en bordes son inserciones.
+images/train__DJ115AO.png,confirmado,DJ115AO,,"Se lee DJ [escudo croata] 115-AO; la última O es una letra del sufijo, no 0."
+images/train__EK034FF.jpg,confirmado,EK034FF,,"Se lee EK-034-FF, descartando la banda y el código 39 del distintivo derecho."
+images/train__ESTG27.png,confirmado,ESTG27,,"Se distingue ES [sello] TG 27, excluyendo el distintivo central."
+images/train__ESXI8932.png,ambiguo,ESXI8932,,Fotografía demasiado oscura y borrosa para verificar inequívocamente I frente a 1 tras ESX (ESXI8932/ESX18932). Conservar GT provisional.
+images/train__FB670AV.png,confirmado,FB670AV,,Se lee FB [escudo austriaco] 670 AV; no hay una O extra antes de 670.
+images/train__HHSE457H.png,confirmado,HHSE457H,,Se lee HH [sellos alemanes] SE 457H; los sellos no forman caracteres.
+images/train__JEE09.png,confirmado,JEE09,,Se lee JEE 09; la pegatina derecha no es una D.
+images/train__KSC124.png,confirmado,KSC124,,Se lee K [sellos] SC 124; se excluyen sellos y banda.
+images/train__L7855.png,confirmado,L7855,,"Se lee L-7855; la B pertenece a la banda europea, no al número."
+images/train__M9852.png,confirmado,M9852,,Se lee M [sellos alemanes] 9852; no hay un 8 antes de 9852.
+images/train__MBCL600.JPG,confirmado,MBCL600,,Se lee MB [sellos] CL 600; las formas cuadradas son ceros.
+images/train__MBDT781.JPG,confirmado,MBDT781,,"Se lee MB [sello] DT 781, sin letras de banda."
+images/train__SAN4002.png,confirmado,SAN4002,,Se aprecia S [distintivo] AN 4002; imagen borrosa pero lectura compatible con GT.
+images/train__SMB2078.JPG,confirmado,SMB2078,,Se lee S [sellos] MB 2078; no hay una S extra.
+images/train__SMC1735.JPG,confirmado,SMC1735,,Se lee S [sellos] MC 1735; se excluyen los adhesivos centrales.
+images/train__SRG4104.png,confirmado,SRG4104,,Se lee S [sello] RG 4104; no se duplica S.
+images/train__T399JBH.png,confirmado,T399JBH,,Se lee T399 JBH; el GB de la banda lateral no forma parte del GT.
+images/train__TR05RBG.png,confirmado,TR05RBG,,Se lee TR 05 RBG; no es TRO5RBG (0 es dígito en este tramo).
+images/train__TR05YPP_1.png,confirmado,TR05YPP,,Se lee TR 05 YPP; la banda lateral no es E adicional.
+images/train__ZE264F0.png,corregido,ZE264F0,ZE264FO,"La placa austriaca muestra ZE [escudo de Salzburgo] 264 FO. El último carácter es la letra O del sufijo alfabético FO, no el dígito 0; lectura clara en imagen original."
+images/val__812AYS06.jpg,confirmado,812AYS06,,"Se lee 812 AYS 06, manteniendo los dos últimos dígitos 06."
+images/val__B97TWD.png,confirmado,B97TWD,,Se lee B 97 TWD; la imagen no contiene L de la banda en la referencia.
+images/train__BB683JP.png,confirmado,BB683JP,,Se lee BB-683-JP; las letras de la banda francesa y el distintivo 2B se excluyen.
+images/train__RI475KM.png,confirmado,RI475KM,,Se lee RI [escudo croata] 475-KM; no se repite 475.
+images/train__AP666TQ.jpg,confirmado,AP666TQ,,Se lee AP-666-TQ; la Q final presenta la forma esperada; el 30 lateral se excluye.
+images/train__B311ALY.png,confirmado,B311ALY,,"Se lee B 311 ALY; imagen rojiza, sin omitir el primer 1."
+images/train__CJ711YG.jpg,confirmado,CJ711YG,,Se lee CJ-711-YG; el distintivo 35 del lateral no forma parte del texto.
+images/train__CQ159PK.jpg,ambiguo,CQ159PK,,La segunda letra de CQ-159-PK puede confundirse con O por el desenfoque (CQ159PK/CO159PK). No hay suficiente detalle para certificar Q/O. Conservar GT provisional.
+images/train__DB749GD.jpg,confirmado,DB749GD,,Se lee DB-749-GD; la fotografía está inclinada pero los caracteres concuerdan.
+images/train__FM971LJ.jpg,confirmado,FM971LJ,,Se lee FM-971-LJ; no se duplica LJ.
+images/train__FR931PX.jpg,confirmado,FR931PX,,Se lee FR-931-PX; la predicción que duplica PX es errónea.
+images/train__GR69681.png,confirmado,GR69681,,Se lee GR-69681; los símbolos de escudos laterales no forman parte de la matrícula.
+images/train__32LZ43.png,confirmado,32LZ43,,Se lee 32-LZ-43; los números pequeños de la franja derecha no se transcriben.
+images/train__3307WWA84.png,confirmado,3307WWA84,,Se lee 3307 WWA 84; no hay un dígito adicional al principio/final.
+images/train__9551WA64.jpg,confirmado,9551WA64,,Se lee 9551 WA 64; la letra F de banda europea se excluye.
+images/train__9EBT002.png,confirmado,9EBT002,,Se lee 9-EBT-002; banda europea y pegatinas no se transcriben.
+images/train__B577PRO.png,confirmado,B577PRO,,"Se lee B 577 PRO; la imagen tiene reflejos, pero se distingue el GT."
+images/train__B68SPK.png,confirmado,B68SPK,,Se lee B 68 SPK; el recorte borroso mantiene una lectura compatible con GT.
+images/train__B95GSV.png,confirmado,B95GSV,,"Se lee B 95 GSV; letra G visible, no se omite."
+images/train__BA065FT.jpg,confirmado,BA065FT,,Se lee BA-065-FT; 66 de la banda lateral francesa no se incluye.
+images/train__BP310AH.png,confirmado,BP310AH,,Se lee BP 310AH; distintivo azul derecho y letra I de banda no se incorporan.
+images/train__DN419NG.jpg,confirmado,DN419NG,,Se lee DN-419-NG; distintivo 01 de la derecha no pertenece al GT.
+images/train__DUS170.png,confirmado,DUS170,,Se lee D [sello alemán] US 170; no hay O adicional tras D.
+images/train__E59J262.png,confirmado,E59J262,,Se lee E59-J-262; la banda BIH de Bosnia-Herzegovina no es parte de la matrícula.
+images/train__EV070QS.jpg,confirmado,EV070QS,,"Francesa EV-070-QS, leyendo las dos letras finales y descartando los distintivos laterales."
+images/train__EV326XY.jpg,confirmado,EV326XY,,Francesa EV-326-XY; la F de la banda azul y el distintivo regional 92 no se transcriben.
+images/train__FC337JE.jpg,confirmado,FC337JE,,Francesa FC-337-JE; el pequeño código del distintivo derecho no se añade.
+images/train__FH921SN.jpg,confirmado,FH921SN,,"Francesa FH-921-SN, sin agregar la S del lateral."
+images/train__FS100VH.jpg,confirmado,FS100VH,,Francesa FS-100-VH; el código 38 a la derecha no pertenece al texto.
+images/train__FS827VN.jpg,confirmado,FS827VN,,Francesa FS-827-VN; el código 59 y el escudo derecho se excluyen.
+images/train__G6620A.png,confirmado,G6620A,,Placa gibraltareña G 6620 A; el código GBZ de las bandas no se añade.
+images/train__G666CD.png,confirmado,G666CD,,Austriaca G [escudo de Estiria] 666 CD; el escudo central no forma una letra O.
+images/train__G8360B.png,confirmado,G8360B,,Gibraltareña G 8360 B; G inicial legible y GBZ de banda excluido.
+images/train__GB55CMW.png,confirmado,GB55CMW,,Británica GB55 CMW; la banderita GB no es parte de la matrícula.
+images/train__IF18YMH.png,confirmado,IF18YMH,,"Británica IF18 YMH; imagen teñida de violeta, pero I inicial visible."
+images/train__NRW11.png,confirmado,NRW11,,Alemana NRW 1-1; los dos sellos centrales no son caracteres adicionales.
+images/train__P01229.png,confirmado,P01229,,Eslovena P [escudo] 01-229; el escudo central no forma una O.
+images/train__PB046BB.png,confirmado,PB046BB,,Eslovaca PB [escudo] 046 BB; los dos ceros son dígitos y el escudo no se lee.
+images/train__SAN9689.png,ambiguo,SAN9689,,"Matrícula alemana oscura. Se intuye S [emblema] AN 9689, pero la fotografía subexpuesta no permite comprobar todos los caracteres con confianza alta. Mantener GT provisional."
+images/train__SB90TZI.png,confirmado,SB90TZI,,Placa SB 90 TZI con dominante rosada; el extremo derecho parece una I vertical; conservar la lectura original.
+images/train__VJ8593.png,confirmado,VJ8593,,Portuguesa VJ-85-93; la banda amarilla de años 90/07 no se transcribe.
+images/train__VSAV88.png,confirmado,VSAV88,,Francesa VSAV88; la F de la banda azul no se incorpora.
+images/val__97M03901.png,corregido,97M03901,97MO3901,"La matrícula irlandesa muestra 97-MO-3901; MO es el código alfabético de condado y su segundo carácter es la letra O, no el dígito 0."
+images/val__FD2107H.png,confirmado,FD2107H,,Alemana F [sello] D2107H; se excluye el sello y la D de la banda.
+images/train__0310CRG.png,confirmado,0310CRG,,Placa 0310 CRG; el distintivo CAT de la banda no se incluye.
+images/train__04WH3753.png,confirmado,04WH3753,,Irlandesa 04-WH-3753; el texto AN IARMHÍ no forma parte del número.
+images/train__07KE10361.png,confirmado,07KE10361,,Irlandesa 07-KE-10361; los bordes y textos del soporte no se incluyen.
+images/train__08BBJ9.png,confirmado,08BBJ9,,Holandesa 08-BBJ-9; no se incorpora la bandera NL.
+images/train__1131XD29.jpg,confirmado,1131XD29,,"Francesa 1131 XD 29, con el soporte y banda europea excluidos."
+images/train__1500WD68.jpg,confirmado,1500WD68,,Francesa 1500 WD 68; lectura compatible con la imagen borrosa.
+images/train__1AAL547.png,confirmado,1AAL547,,Belga 1-AAL-547; el primer carácter es el dígito 1.
+images/train__1GFZ461.png,ambiguo,1GFZ461,,"Imagen borrosa de matrícula belga. Compatible con 1-GFZ-461, pero falta detalle para verificar cada carácter, especialmente G/F/Z y el prefijo. Mantener provisional."
+images/train__1KTT82.png,confirmado,1KTT82,,Holandesa 1-KTT-82; los guiones son separadores y no aparecen en GT normalizado.
+images/train__1OYD682.png,confirmado,1OYD682,,"Belga 1-OYD-682; el bloque alfabético es OYD, con letra O."
+images/train__20319TTW.png,confirmado,20319TTW,,Francesa de fondo rojo 20319 TTW; no hay un 1 adicional al inicio.
+images/train__2330GY90.jpg,confirmado,2330GY90,,Francesa 2330 GY 90; la inicial N del OCR Tiny es ajena a la imagen.
+images/train__236M125.png,confirmado,236M125,,Bosnia-Herzegovina 236-M-125; la banda BiH no pertenece al GT.
+images/train__2417GSM.png,confirmado,2417GSM,,Española 2417 GSM; la E de la banda europea se excluye.
+images/train__252AYF67.png,confirmado,252AYF67,,Francesa 252 AYF 67; la F de banda azul no se incorpora al GT.
+images/train__2AN0913.png,confirmado,2AN0913,,Checa 2AN 0913; los sellos de inspección centrales se excluyen.
+images/train__2KVB52.png,confirmado,2KVB52,,Holandesa 2-KVB-52; no confundir el prefijo 2 con J del OCR Tiny.
+images/train__30VBX7.png,confirmado,30VBX7,,"Holandesa 30-VBX-7; el primer bloque es 30, no 330."
+images/train__3233YG30.png,confirmado,3233YG30,,Primera foto francesa de 3233 YG 30; etiqueta verificada.
+images/train__3233YG30_1.png,confirmado,3233YG30,,Segunda foto francesa de 3233 YG 30; mismo texto que la foto anterior.
+images/train__33DS71.png,confirmado,33DS71,,Holandesa 33-DS-71; el 3 inicial no se duplica.
+images/train__3H360E.png,confirmado,3H360E,,Neozelandesa 3H3 60E; la franja con letras NZ no forma parte del número.
+images/train__4969ZD56.png,confirmado,4969ZD56,,Francesa 4969 ZD 56; la banda BZH no se incluye.
+images/train__4980BM.png,confirmado,4980BM,,Portuguesa 49-80-BM; la P de la banda no forma parte del texto.
+images/train__4CO78E.png,ambiguo,4CO78E,,"Matrícula blanca 4CO78E: el carácter redondo tras C puede ser O o 0, y la placa carece de separación inequívoca entre letras y cifras. Mantener GT provisional."
+images/train__515ND70.jpg,confirmado,515ND70,,"Francesa amarilla 515 ND 70, compatible con el GT pese al desenfoque leve."
+images/train__5483648.png,confirmado,5483648,,Eslovaca 54-83648; los elementos en banda izquierda no se transcriben.
+images/train__5675858.png,confirmado,5675858,,Eslovaca 56-75858; no añadir 1 al principio desde la banda.
+images/train__5951FPF.png,confirmado,5951FPF,,Matrícula española 5951 FPF. El prefijo E de la banda azul no se incluye.
+images/train__6807GZ2A.png,confirmado,6807GZ2A,,Matrícula francesa 6807 GZ 2A. El símbolo F de la banda europea no se incluye.
+images/train__6935XY64.jpg,confirmado,6935XY64,,"Matrícula francesa amarilla 6935 XY 64, con perspectiva inclinada."
+images/train__71TPR1.png,confirmado,71TPR1,,Matrícula neerlandesa 71-TPR-1; el distintivo NL no es texto de matrícula.
+images/train__72WFRV.png,confirmado,72WFRV,,Matrícula neerlandesa 72-WF-RV; no se incorpora la banda NL.
+images/train__7418ZE25.jpg,confirmado,7418ZE25,,Matrícula francesa amarilla 7418 ZE 25; caracteres distinguibles pese al ligero desenfoque.
+images/train__75XNH3.png,confirmado,75XNH3,,Matrícula neerlandesa 75-XNH-3.
+images/train__7770ZP14.jpg,confirmado,7770ZP14,,Matrícula francesa antigua 7770 ZP 14; se excluye F de la banda.
+images/train__7796ZA30.png,confirmado,7796ZA30,,"Matrícula francesa antigua 7796 ZA 30, legible."
+images/train__7B71000.png,confirmado,7B71000,,Matrícula checa 7B7 1000; los sellos centrales no forman caracteres.
+images/train__8185ZS30.png,confirmado,8185ZS30,,Matrícula francesa 8185 ZS 30; Z y S no deben confundirse con 2 y 5.
+images/train__8326WWG34.png,confirmado,8326WWG34,,Matrícula francesa 8326 WWG 34; doble W visible.
+images/train__84R2712A.png,confirmado,84R2712A,,Matrícula amarilla 84R2712A; todos los caracteres visibles.
+images/train__9089TW22.jpg,confirmado,9089TW22,,Matrícula francesa 9089 TW 22; excluir F lateral.
+images/train__9343ZH68.jpg,confirmado,9343ZH68,,Matrícula francesa 9343 ZH 68; coincide pese a la fuerte perspectiva.
+images/train__9348BN.png,confirmado,9348BN,,Matrícula neerlandesa 93-48-BN.
+images/train__97C17149.png,confirmado,97C17149,,Matrícula irlandesa 97-C-17149; código C y secuencia 17149.
+images/train__97WW755.png,confirmado,97WW755,,Matrícula irlandesa 97-WW-755; WW pertenece al bloque central.
+images/train__995AXF35.jpg,confirmado,995AXF35,,Matrícula francesa 995 AXF 35; F de la banda excluida.
+images/train__9A911D.png,confirmado,9A911D,,Matrícula belga 9-A-911-D; no añadir símbolos de separadores.
+images/train__9JAG121.png,confirmado,9JAG121,,Primera imagen de la matrícula belga 9-JAG-121.
+images/train__9JAG121_1.png,confirmado,9JAG121,,Segunda imagen de la misma matrícula belga 9-JAG-121; etiqueta consistente.
+images/train__AA252WS.jpg,confirmado,AA252WS,,Matrícula francesa AA-252-WS; código regional 65 ajeno al texto.
+images/train__AA6888KI.png,confirmado,AA6888KI,,Matrícula ucraniana AA 6888 KI; las letras finales son KI.
+images/train__AE014ZH.png,confirmado,AE014ZH,,Matrícula francesa AE-014-ZH; código regional 62 ajeno al texto.
+images/train__AE335VY.jpg,confirmado,AE335VY,,Matrícula francesa AE-335-VY; letras de ambos bloques discernibles tras ampliación.
+images/train__AFZ8924.png,confirmado,AFZ8924,,Matrícula británica AFZ 8924; GB de banda no se transcribe.
+images/train__AH595PC.png,confirmado,AH595PC,,Matrícula francesa AH-595-PC; símbolos de la región 51 ajenos.
+images/train__AI20291.png,confirmado,AI20291,,Matrícula suiza AI 20291; AI corresponde al prefijo alfabético visible.
+images/train__AK685FJ.jpg,confirmado,AK685FJ,,Matrícula neerlandesa AK-685-FJ; FJ final visible.
+images/train__AL333SM.jpg,confirmado,AL333SM,,Matrícula francesa AL-333-SM; caracteres visibles con leve perspectiva.
+images/train__ANK7444.png,confirmado,ANK7444,,Matrícula griega ANK 7444; insignia entre letras y números no es carácter.
+images/train__AP819FK.jpg,confirmado,AP819FK,,"Matrícula francesa AP-819-FK, legible."
+images/train__AR687FF.jpg,confirmado,AR687FF,,Matrícula francesa AR-687-FF; el distintivo regional 69 se excluye.
+images/train__AV812LT.png,confirmado,AV812LT,,Matrícula francesa AV-812-LT; código regional 59 a la derecha no se incluye.
+images/train__B121NCA.png,ambiguo,B121NCA,,"Matrícula rumana B 121 NCA; la imagen tiene resolución 92x38 y está muy desenfocada. No es posible verificar independientemente cada carácter. Mantener el GT provisional, sin sustituirlo por la coincidencia de los modelos."
+images/train__B152FTO.png,confirmado,B152FTO,,Matrícula rumana B 152 FTO; O final es letra en el bloque de tres letras.
+images/train__B305CIL.png,confirmado,B305CIL,,Matrícula rumana B 305 CIL; la banda RO no forma parte del texto.
+images/train__B310VLV.png,confirmado,B310VLV,,Matrícula rumana B 310 VLV; no añadir 1 inicial.
+images/train__B311ALY_1.png,confirmado,B311ALY,,Matrícula rumana B 311 ALY; la salida truncada de Small es error de OCR.
+images/train__B3456.png,confirmado,B3456,,Matrícula belga antigua B-3456; la marca redonda junto a la B no se transcribe.
+images/train__B535SFI.png,confirmado,B535SFI,,Matrícula rumana B 535 SFI; I final visible.
+images/train__B57RCH.png,confirmado,B57RCH,,Matrícula rumana B 57 RCH; letras RCH visibles.
+images/train__B58BBP.png,confirmado,B58BBP,,Matrícula rumana B 58 BBP; el segundo bloque es BBP.
+images/train__B58DTK.png,confirmado,B58DTK,,Matrícula rumana B 58 DTK; la referencia coincide con la imagen.
+images/train__B58RMB.png,confirmado,B58RMB,,Matrícula rumana B 58 RMB; el carácter lateral de otros modelos no pertenece al texto.
+images/train__B75MCY_1.png,ambiguo,B75MCY,,"Matrícula rumana B 75 MCY; un reflejo tapa la zona central, especialmente la M y la C. No se puede confirmar toda la lectura visualmente. Mantener GT provisional sin cambio."
+images/train__B911BLG.png,confirmado,B911BLG,,Matrícula rumana B 911 BLG; letras BLG distinguibles.
+images/train__B91SYE.png,confirmado,B91SYE,,"Matrícula B 91 SYE visible, pese al reflejo intenso sobre la zona central."
+images/train__B98LPM.png,confirmado,B98LPM,,Matrícula B-98-LPM visible; no añadir caracteres del marco.
+images/train__BA0304AC.png,confirmado,BA0304AC,,Matrícula española BA 0304 AC visible; la E lateral es la identificación europea y no pertenece a la matrícula.
+images/train__BA884XN.jpg,confirmado,BA884XN,,Matrícula francesa BA-884-XN; no añadir las marcas de la banda ni el código regional 75.
+images/train__BAXA506.png,confirmado,BAXA506,,Matrícula eslovaca BA-XA506; no añadir la banda nacional SK ni el escudo.
+images/train__BB980NJ.jpg,confirmado,BB980NJ,,Matrícula francesa BB-980-NJ; no incluir F de la banda ni el distintivo regional 76.
+images/train__BC081WH.png,ambiguo,BC081WH,,"Fotografía muy oscura y con poco contraste: aunque BC081WH parece plausible, no se pueden verificar independientemente todos los caracteres. Mantener GT candidato."
+images/train__BE259030_1.png,confirmado,BE259030,,Matrícula suiza BE 259 030; no confundir escudos laterales con caracteres.
+images/train__BE609343.png,confirmado,BE609343,,Matrícula suiza BE 609343; escudos cantonales a izquierda y derecha ajenos al texto.
+images/train__BE800HG.png,confirmado,BE800HG,,Matrícula francesa BE-800-HG; el código regional 14 no se transcribe.
+images/train__BE850NF.jpg,confirmado,BE850NF,,Matrícula francesa BE-850-NF; banda y región no forman parte del texto.
+images/train__BF058NY.jpg,confirmado,BF058NY,,"Matrícula francesa BF-058-NY; 0 inicial del bloque numérico visible, banda lateral excluida."
+images/train__BG19517.png,confirmado,BG19517,,Matrícula alemana BG [escudo] 19-517; insignia central ajena a los caracteres.
+images/train__BH3946BT.png,confirmado,BH3946BT,,Matrícula ucraniana BH 3946 BT; el emblema y UA no se transcriben.
+images/train__BH688GW.jpg,confirmado,BH688GW,,"Matrícula francesa BH-688-GW; pese a la perspectiva, el bloque de letras GW se distingue."
+images/train__BH815JR.jpg,confirmado,BH815JR,,"Matrícula francesa BH-815-JR, con poca iluminación pero caracteres visibles."
+images/train__BJ202ZP.jpg,confirmado,BJ202ZP,,Matrícula francesa BJ-202-ZP; región 66 excluida.
+images/train__BJ604SB.jpg,confirmado,BJ604SB,,Matrícula francesa BJ-604-SB; los prefijos de SVTR no aparecen en el texto.
+images/train__BK308GQ.jpg,confirmado,BK308GQ,,Matrícula francesa BK-308-GQ; el código regional 25 se excluye.
+images/train__BK678YW.jpg,confirmado,BK678YW,,Matrícula francesa BK-678-YW; sin prefijos numéricos adicionales.
+images/train__BL001AA.png,confirmado,BL001AA,,Matrícula eslovaca BL [escudo] 001 AA; el emblema no se transcribe.
+images/train__BL315PX.png,confirmado,BL315PX,,Matrícula francesa BL-315-PX; lectura compatible tras ampliar la imagen ligeramente borrosa.
+images/train__BL374RT.png,confirmado,BL374RT,,Matrícula francesa BL-374-RT; no añadir letras de la banda ni del código regional.
+images/train__BL585KE.jpg,confirmado,BL585KE,,"Matrícula francesa BL-585-KE, con grano en la imagen; no añadir el distintivo lateral."
+images/train__BLAM414.png,confirmado,BLAM414,,Matrícula alemana BL [insignias] AM 414; no confundir los dos escudos con texto.
+images/train__BM040RK.jpg,confirmado,BM040RK,,Matrícula francesa BM-040-RK; la cifra central conserva cero inicial.
+images/train__BN840DD.png,confirmado,BN840DD,,Matrícula neerlandesa BN [escudo] 840 DD; insignia entre grupos sin caracteres extra.
+images/train__BP897ER.jpg,confirmado,BP897ER,,Matrícula francesa BP-897-ER; código de región 68 fuera del texto de matrícula.
+images/train__BQ670QB.png,confirmado,BQ670QB,,Matrícula francesa BQ-670-QB; se observan las letras Q en ambos bloques.
+images/train__BQ708GP.png,confirmado,BQ708GP,,"Matrícula francesa BQ-708-GP, con el código regional 92 ajeno al texto."
+images/train__BR07AAC.png,confirmado,BR07AAC,,Matrícula rumana BR 07 AAC; la banda RO está fuera del texto.
+images/train__BR07AAC_1.png,confirmado,BR07AAC,,Segunda imagen de la misma matrícula rumana BR 07 AAC; se mantiene GT idéntico.
+images/train__BR16MOC.png,confirmado,BR16MOC,,Matrícula rumana BR 16 MOC; los modelos no deben omitir el 1.
+images/train__BR16MOC_1.png,confirmado,BR16MOC,,Segunda imagen de BR 16 MOC; el GT es coherente entre duplicados.
+images/train__BRL702.png,confirmado,BRL702,,Matrícula alemana B [escudo] RL 702; emblema no se transcribe.
+images/train__BS398KW.jpg,confirmado,BS398KW,,Matrícula francesa BS-398-KW; región y banda no son texto de matrícula.
+images/train__BS45640.png,confirmado,BS45640,,Matrícula suiza BS 45640; se excluyen escudos cantonales.
+images/train__BS45640_1.png,confirmado,BS45640,,Segunda imagen de BS 45640; texto coincidente y escudos laterales excluidos.
+images/train__BT091WZ.jpg,confirmado,BT091WZ,,Matrícula francesa BT-091-WZ; no añadir el distintivo regional derecho.
+images/train__BT254HA.jpg,confirmado,BT254HA,,Matrícula francesa BT-254-HA; marcas laterales excluidas.
+images/train__BV547PG.png,ambiguo,BV547PG,,"Fotografía subexpuesta y desenfocada: BV547PG es plausible, pero no se distinguen con nitidez los caracteres centrales y finales. Mantener GT candidato."
+images/train__BW091AS.png,ambiguo,BW091AS,,Fotografía de resolución muy reducida (82×31 píxeles) y desenfocada: BW091AS no es verificable carácter por carácter. Mantener GT candidato.
+images/train__BW2172.png,confirmado,BW2172,,Matrícula alemana BW 2 [insignias] 172; los emblemas no forman caracteres.
+images/train__BW716WH.jpg,confirmado,BW716WH,,Matrícula francesa BW-716-WH; región 50 no se transcribe.
+images/train__CA213ZN.jpg,confirmado,CA213ZN,,Matrícula portuguesa CA-213-ZN; sin símbolos de banda ni caracteres adicionales.
+images/train__CC221PK.jpg,confirmado,CC221PK,,Matrícula francesa CC-221-PK; región 25 excluida.
+images/train__CE683HR.png,confirmado,CE683HR,,Matrícula francesa CE-683-HR; banda europea y región 23 excluidas.
+images/train__CE7373AE.png,confirmado,CE7373AE,,Matrícula ucraniana CE 7373 AE; banda UA no pertenece al texto OCR.
+images/train__CE7569AT.png,confirmado,CE7569AT,,Se distingue CE 7569 AT; la banda UA queda fuera del texto.
+images/train__CE8670AX.png,confirmado,CE8670AX,,Se distingue CE 8670 AX; el emblema de la banda es ajeno al OCR.
+images/train__CEH422S.png,confirmado,CEH422S,,Se distingue CE H4-22S con escudo esloveno entre letras y números: excluir escudo.
+images/train__CF058NS.jpg,confirmado,CF058NS,,Se distingue CF-058-NS; no transcribir código regional derecho.
+images/train__CH366BX.jpg,confirmado,CH366BX,,Se distingue CH-366-BX; las etiquetas de la región 57 y banda F no son texto.
+images/train__CK80068.png,ambiguo,CK80068,,"Imagen de 130×40 píxeles extremadamente desenfocada, contraste insuficiente para comprobar de forma independiente todos los caracteres CK80068; se mantiene como candidato."
+images/train__CM229MN_1.png,confirmado,CM229MN,,"Se distingue CM 229 MN, con sello central decorativo italiano excluido."
+images/train__CN976MT.jpg,confirmado,CN976MT,,"Se distingue CN-976-MT, sin la identificación europea ni distintivo regional."
+images/train__CQ699FC.jpg,ambiguo,CQ699FC,,"Matrícula francesa CQ-699-FC visible en conjunto, pero la Q/O del segundo carácter del primer bloque no se distingue inequívocamente por perspectiva y poca luz; no corregir por consenso de OCR."
+images/train__CR214ZQ.jpg,confirmado,CR214ZQ,,Se distingue CR-214-ZQ con el último carácter Q; distintivo regional excluido.
+images/train__CT401KB.jpg,confirmado,CT401KB,,Se distingue CT-401-KB; la repetición generada por Tiny no está en la matrícula.
+images/train__CT879GW.png,confirmado,CT879GW,,Se distingue CT-879-GW; la banda de región 34 no es texto.
+images/train__CX347FC.png,confirmado,CX347FC,,Se distingue CX-347-FC a pesar de la baja resolución; sin cambio.
+images/train__D042652.png,confirmado,D042652,,Se distingue D [sello] 042652; el sello circular alemán se excluye.
+images/train__DA424BH.png,confirmado,DA424BH,,Se distingue DA [escudo] 424-BH; el escudo central croata no es carácter.
+images/train__DB48SCF.png,confirmado,DB48SCF,,"Se distingue DB 48 SCF, GT ya validado y corregido en auditoría anterior; sin cambio adicional."
+images/train__DC165MK.jpg,confirmado,DC165MK,,Se distingue DC-165-MK; los elementos laterales no son caracteres.
+images/train__DE446EP.jpg,confirmado,DE446EP,,"Se distingue DE-446-EP, sin prefijos añadidos por algunos modelos."
+images/train__DH058PS.jpg,confirmado,DH058PS,,Se distingue DH-058-PS; no transcribir el código de región derecho.
+images/train__DK436ET.jpg,confirmado,DK436ET,,Se distingue DK-436-ET; la banda regional se excluye.
+images/train__DM025MP.jpg,confirmado,DM025MP,,Se distingue DM-025-MP; las repeticiones generadas por Tiny no están en la imagen.
+images/train__DP933CD.jpg,confirmado,DP933CD,,Se distingue DP-933-CD; banda F y región 76 fuera del texto.
+images/train__DQ200PB.png,ambiguo,DQ200PB,,El segundo carácter del prefijo DQ/DO no puede distinguirse con seguridad a partir del recorte muy desenfocado (155×34); conservar DQ200PB provisional.
+images/train__DR337TM.png,confirmado,DR337TM,,"Se distingue DR 337 TM con emblema entre letras y cifras, excluido."
+images/train__DS051CD.png,confirmado,DS051CD,,Se distingue DS-051-CD; no añadir la letra D de la banda eslovaca.
+images/train__DS641PQ.png,confirmado,DS641PQ,,Se distingue DS-641-PQ; región derecha excluida.
+images/train__DT0505.png,confirmado,DT0505,,Se distingue DT 05-05 en placa húngara; los ceros están en ambos grupos.
+images/train__DT548KY.png,confirmado,DT548KY,,"Se distingue DT-548-KY, aunque el recorte tiene leve desenfoque."
+images/train__DY323ZC.jpg,confirmado,DY323ZC,,Se distingue DY-323-ZC; región lateral derecha excluida.
+images/train__EA698EC.jpg,confirmado,EA698EC,,Se distingue EA-698-EC; no transcribir el código regional.
+images/train__EC377VM.jpg,confirmado,EC377VM,,Se distingue EC-377-VM; la predicción con repetición no coincide con la imagen.
+images/train__EC431DC.jpg,confirmado,EC431DC,,Se distingue EC-431-DC; el prefijo generado por otros modelos es artificial.
+images/train__EL493LK.jpg,confirmado,EL493LK,,Se distingue EL-493-LK; región lateral excluida.
+images/train__EM997GY.jpg,confirmado,EM997GY,,Se distingue EM-997-GY; banda europea excluida.
+images/train__EN009NR.jpg,confirmado,EN009NR,,"Se distingue EN-009-NR, con los dos ceros al inicio del grupo numérico."
+images/train__ER803WH.jpg,confirmado,ER803WH,,"Se distingue ER-803-WH; el último bloque es WH, no HH."
+images/train__ER888FS.jpg,confirmado,ER888FS,,Se distingue ER-888-FS; no añadir la letra B de la banda o marco.
+images/train__ES344.png,confirmado,ES344,,Se distingue ES [sellos] 344; los sellos centrales no añaden caracteres.
+images/train__ES465EA.jpg,confirmado,ES465EA,,"Se distingue ES-465-EA; aunque hay desenfoque, la secuencia es legible."
+images/train__EVF960.png,confirmado,EVF960,,Se distingue EVF-960; los tres caracteres alfabéticos iniciales son EVF.
+images/train__EY728WJ.jpg,confirmado,EY728WJ,,Se distingue EY-728-WJ con contraste reducido; caracteres compatibles.
+images/train__EZ393CA.jpg,confirmado,EZ393CA,,Se distingue EZ-393-CA; región lateral 44 excluida.
+images/train__EZ853XD.jpg,confirmado,EZ853XD,,"Se distingue EZ-853-XD; el último carácter se aprecia como D, no 0."
+images/train__FA485KS.jpg,confirmado,FA485KS,,Se distingue FA-485-KS; código regional ajeno al texto.
+images/train__FB487GN.jpg,confirmado,FB487GN,,Se distingue FB-487-GN; código regional ajeno al texto.
+images/train__FB761SN.jpg,confirmado,FB761SN,,Se distingue FB-761-SN; códigos de banda y región ajenos al texto.
+images/train__FC768JZ.jpg,confirmado,FC768JZ,,Se distingue FC-768-JZ; códigos laterales excluidos.
+images/train__FCK469.png,confirmado,FCK469,,Se distingue F [sello] CK 469; el sello entre F y CK no es texto.
