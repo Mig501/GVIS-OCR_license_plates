@@ -1,0 +1,4 @@
+﻿numero,source_path,scenario,plate_layout,track_id,view_id,gt_original,gt_verificado,decision,estado,nota
+09,train/Scenario-A/Brazilian/track_02068/hr-001.png,Scenario-A,Brazilian,Scenario-A/Brazilian/track_02068,001,AUO9251,AUO9251,CONFIRMAR,verified,Validacion manual del usuario; conservar GT sin cambios
+28,train/Scenario-A/Mercosur/track_04943/hr-004.png,Scenario-A,Mercosur,Scenario-A/Mercosur/track_04943,004,SDO0D32,SDO0D32,CONFIRMAR,verified,Validacion manual del usuario; conservar GT sin cambios
+29,train/Scenario-B/Brazilian/track_11686/hr-004.jpg,Scenario-B,Brazilian,Scenario-B/Brazilian/track_11686,004,AOY8590,AOY8590,CONFIRMAR,verified,Validacion manual del usuario; conservar GT sin cambios
